@@ -1,0 +1,3919 @@
+{
+    "TrainingCenterDatabase": {
+        "Folders": {
+            "Courses": {
+                "CourseFolder": {
+                    "@_Name": "Courses",
+                    "CourseNameRef": {
+                        "Id": "Gravel-ride-fro"
+                    }
+                }
+            }
+        },
+        "Courses": {
+            "Course": {
+                "Track": {
+                    "Trackpoint": [
+                        {
+                            "Time": "2020-08-05T05:09:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.839295,
+                                "LongitudeDegrees": -123.959679
+                            },
+                            "AltitudeMeters": 47.660132,
+                            "DistanceMeters": 0
+                        },
+                        {
+                            "Time": "2020-08-05T05:10:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8385559,
+                                "LongitudeDegrees": -123.959732
+                            },
+                            "AltitudeMeters": 47.660132,
+                            "DistanceMeters": 82.37836619887925
+                        },
+                        {
+                            "Time": "2020-08-05T05:11:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.838526,
+                                "LongitudeDegrees": -123.958723
+                            },
+                            "AltitudeMeters": 50.549016,
+                            "DistanceMeters": 160.70102055069248
+                        },
+                        {
+                            "Time": "2020-08-05T05:11:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.838527,
+                                "LongitudeDegrees": -123.958416
+                            },
+                            "AltitudeMeters": 51.684434,
+                            "DistanceMeters": 184.51033853339655
+                        },
+                        {
+                            "Time": "2020-08-05T05:11:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.838234,
+                                "LongitudeDegrees": -123.958561
+                            },
+                            "AltitudeMeters": 53.329694,
+                            "DistanceMeters": 219.0109016120782
+                        },
+                        {
+                            "Time": "2020-08-05T05:11:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.837808,
+                                "LongitudeDegrees": -123.958671
+                            },
+                            "AltitudeMeters": 55.627445,
+                            "DistanceMeters": 267.193968188384
+                        },
+                        {
+                            "Time": "2020-08-05T05:12:34Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.836732,
+                                "LongitudeDegrees": -123.958764
+                            },
+                            "AltitudeMeters": 57.194499,
+                            "DistanceMeters": 387.19001012180513
+                        },
+                        {
+                            "Time": "2020-08-05T05:12:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.836324,
+                                "LongitudeDegrees": -123.958897
+                            },
+                            "AltitudeMeters": 57.187071,
+                            "DistanceMeters": 433.7647126291947
+                        },
+                        {
+                            "Time": "2020-08-05T05:12:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.835994,
+                                "LongitudeDegrees": -123.9591
+                            },
+                            "AltitudeMeters": 57.180697,
+                            "DistanceMeters": 473.7316185676469
+                        },
+                        {
+                            "Time": "2020-08-05T05:13:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.834681,
+                                "LongitudeDegrees": -123.960151
+                            },
+                            "AltitudeMeters": 51.792063,
+                            "DistanceMeters": 641.0867342712309
+                        },
+                        {
+                            "Time": "2020-08-05T05:13:23Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.834127,
+                                "LongitudeDegrees": -123.960377
+                            },
+                            "AltitudeMeters": 49.2788309,
+                            "DistanceMeters": 705.2000381441218
+                        },
+                        {
+                            "Time": "2020-08-05T05:13:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.833748,
+                                "LongitudeDegrees": -123.960381
+                            },
+                            "AltitudeMeters": 47.120968,
+                            "DistanceMeters": 747.3910210651187
+                        },
+                        {
+                            "Time": "2020-08-05T05:13:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.832785,
+                                "LongitudeDegrees": -123.960182
+                            },
+                            "AltitudeMeters": 41.581671,
+                            "DistanceMeters": 855.6965146830663
+                        },
+                        {
+                            "Time": "2020-08-05T05:13:50Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.832365,
+                                "LongitudeDegrees": -123.960174
+                            },
+                            "AltitudeMeters": 39.236657,
+                            "DistanceMeters": 902.4545469008636
+                        },
+                        {
+                            "Time": "2020-08-05T05:14:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.831545,
+                                "LongitudeDegrees": -123.960487
+                            },
+                            "AltitudeMeters": 37.4494029,
+                            "DistanceMeters": 996.9092366678212
+                        },
+                        {
+                            "Time": "2020-08-05T05:14:23Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.830619,
+                                "LongitudeDegrees": -123.96055
+                            },
+                            "AltitudeMeters": 35.496729,
+                            "DistanceMeters": 1100.106245287711
+                        },
+                        {
+                            "Time": "2020-08-05T05:14:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.830021,
+                                "LongitudeDegrees": -123.960481
+                            },
+                            "AltitudeMeters": 38.399746,
+                            "DistanceMeters": 1166.8897144471052
+                        },
+                        {
+                            "Time": "2020-08-05T05:15:02Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.829631,
+                                "LongitudeDegrees": -123.960324
+                            },
+                            "AltitudeMeters": 40.408197,
+                            "DistanceMeters": 1211.9796944740804
+                        },
+                        {
+                            "Time": "2020-08-05T05:15:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.829325,
+                                "LongitudeDegrees": -123.960062
+                            },
+                            "AltitudeMeters": 42.175011,
+                            "DistanceMeters": 1251.6448923262224
+                        },
+                        {
+                            "Time": "2020-08-05T05:15:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8289169,
+                                "LongitudeDegrees": -123.959679
+                            },
+                            "AltitudeMeters": 44.734375,
+                            "DistanceMeters": 1305.9255507696766
+                        },
+                        {
+                            "Time": "2020-08-05T05:16:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8287509,
+                                "LongitudeDegrees": -123.95957
+                            },
+                            "AltitudeMeters": 46.286762,
+                            "DistanceMeters": 1326.2468523797374
+                        },
+                        {
+                            "Time": "2020-08-05T05:16:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828294,
+                                "LongitudeDegrees": -123.95947
+                            },
+                            "AltitudeMeters": 50.217949,
+                            "DistanceMeters": 1377.6965181126852
+                        },
+                        {
+                            "Time": "2020-08-05T05:17:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827643,
+                                "LongitudeDegrees": -123.959626
+                            },
+                            "AltitudeMeters": 55.83062,
+                            "DistanceMeters": 1451.168421076824
+                        },
+                        {
+                            "Time": "2020-08-05T05:17:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827384,
+                                "LongitudeDegrees": -123.959805
+                            },
+                            "AltitudeMeters": 58.275227,
+                            "DistanceMeters": 1483.169210840789
+                        },
+                        {
+                            "Time": "2020-08-05T05:18:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8263729,
+                                "LongitudeDegrees": -123.960902
+                            },
+                            "AltitudeMeters": 58.874687,
+                            "DistanceMeters": 1624.2705266856512
+                        },
+                        {
+                            "Time": "2020-08-05T05:18:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8262,
+                                "LongitudeDegrees": -123.961005
+                            },
+                            "AltitudeMeters": 58.736121,
+                            "DistanceMeters": 1645.1100371769487
+                        },
+                        {
+                            "Time": "2020-08-05T05:18:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826067,
+                                "LongitudeDegrees": -123.961079
+                            },
+                            "AltitudeMeters": 58.630588,
+                            "DistanceMeters": 1660.9892924731803
+                        },
+                        {
+                            "Time": "2020-08-05T05:18:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825444,
+                                "LongitudeDegrees": -123.961128
+                            },
+                            "AltitudeMeters": 57.528061,
+                            "DistanceMeters": 1730.4450175572938
+                        },
+                        {
+                            "Time": "2020-08-05T05:18:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8253,
+                                "LongitudeDegrees": -123.961104
+                            },
+                            "AltitudeMeters": 57.058441,
+                            "DistanceMeters": 1746.582681194189
+                        },
+                        {
+                            "Time": "2020-08-05T05:18:56Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824546,
+                                "LongitudeDegrees": -123.96097
+                            },
+                            "AltitudeMeters": 54.597218,
+                            "DistanceMeters": 1831.1583055259925
+                        },
+                        {
+                            "Time": "2020-08-05T05:19:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824357,
+                                "LongitudeDegrees": -123.960318
+                            },
+                            "AltitudeMeters": 53.003092,
+                            "DistanceMeters": 1885.9376809348807
+                        },
+                        {
+                            "Time": "2020-08-05T05:19:41Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8240849,
+                                "LongitudeDegrees": -123.959555
+                            },
+                            "AltitudeMeters": 54.741492,
+                            "DistanceMeters": 1952.4267552347414
+                        },
+                        {
+                            "Time": "2020-08-05T05:20:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824076,
+                                "LongitudeDegrees": -123.958844
+                            },
+                            "AltitudeMeters": 57.16478,
+                            "DistanceMeters": 2007.5908137759502
+                        },
+                        {
+                            "Time": "2020-08-05T05:20:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824024,
+                                "LongitudeDegrees": -123.958716
+                            },
+                            "AltitudeMeters": 57.669677,
+                            "DistanceMeters": 2019.084392334738
+                        },
+                        {
+                            "Time": "2020-08-05T05:20:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823833,
+                                "LongitudeDegrees": -123.958505
+                            },
+                            "AltitudeMeters": 58.848392,
+                            "DistanceMeters": 2045.9169367876652
+                        },
+                        {
+                            "Time": "2020-08-05T05:21:04Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823516,
+                                "LongitudeDegrees": -123.958416
+                            },
+                            "AltitudeMeters": 60.427938,
+                            "DistanceMeters": 2081.874068731951
+                        },
+                        {
+                            "Time": "2020-08-05T05:21:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823164,
+                                "LongitudeDegrees": -123.958075
+                            },
+                            "AltitudeMeters": 62.60479,
+                            "DistanceMeters": 2129.151664857855
+                        },
+                        {
+                            "Time": "2020-08-05T05:21:35Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823126,
+                                "LongitudeDegrees": -123.958037
+                            },
+                            "AltitudeMeters": 62.850526,
+                            "DistanceMeters": 2134.3076114009964
+                        },
+                        {
+                            "Time": "2020-08-05T05:21:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823003,
+                                "LongitudeDegrees": -123.957914
+                            },
+                            "AltitudeMeters": 63.645933,
+                            "DistanceMeters": 2150.9966041540374
+                        },
+                        {
+                            "Time": "2020-08-05T05:21:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822933,
+                                "LongitudeDegrees": -123.957584
+                            },
+                            "AltitudeMeters": 64.921313,
+                            "DistanceMeters": 2177.7562351530937
+                        },
+                        {
+                            "Time": "2020-08-05T05:22:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822944,
+                                "LongitudeDegrees": -123.95706
+                            },
+                            "AltitudeMeters": 66.859579,
+                            "DistanceMeters": 2218.4243186570893
+                        },
+                        {
+                            "Time": "2020-08-05T05:22:34Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823059,
+                                "LongitudeDegrees": -123.956729
+                            },
+                            "AltitudeMeters": 68.227045,
+                            "DistanceMeters": 2247.1160837628413
+                        },
+                        {
+                            "Time": "2020-08-05T05:22:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823224,
+                                "LongitudeDegrees": -123.956609
+                            },
+                            "AltitudeMeters": 69.2084689,
+                            "DistanceMeters": 2267.7080092186784
+                        },
+                        {
+                            "Time": "2020-08-05T05:23:06Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823479,
+                                "LongitudeDegrees": -123.956381
+                            },
+                            "AltitudeMeters": 70.8025119,
+                            "DistanceMeters": 2301.153734001952
+                        },
+                        {
+                            "Time": "2020-08-05T05:24:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824111,
+                                "LongitudeDegrees": -123.955308
+                            },
+                            "AltitudeMeters": 79.463658,
+                            "DistanceMeters": 2410.140343767368
+                        },
+                        {
+                            "Time": "2020-08-05T05:24:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8241919,
+                                "LongitudeDegrees": -123.955231
+                            },
+                            "AltitudeMeters": 80.327738,
+                            "DistanceMeters": 2420.9468972791606
+                        },
+                        {
+                            "Time": "2020-08-05T05:24:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82441,
+                                "LongitudeDegrees": -123.955213
+                            },
+                            "AltitudeMeters": 82.269683,
+                            "DistanceMeters": 2445.265657445083
+                        },
+                        {
+                            "Time": "2020-08-05T05:25:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824585,
+                                "LongitudeDegrees": -123.955086
+                            },
+                            "AltitudeMeters": 84.013709,
+                            "DistanceMeters": 2467.095913780831
+                        },
+                        {
+                            "Time": "2020-08-05T05:25:15Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824632,
+                                "LongitudeDegrees": -123.95495
+                            },
+                            "AltitudeMeters": 84.954502,
+                            "DistanceMeters": 2478.8719743876118
+                        },
+                        {
+                            "Time": "2020-08-05T05:25:24Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824622,
+                                "LongitudeDegrees": -123.95482
+                            },
+                            "AltitudeMeters": 85.765051,
+                            "DistanceMeters": 2489.017758034483
+                        },
+                        {
+                            "Time": "2020-08-05T05:25:52Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824526,
+                                "LongitudeDegrees": -123.954422
+                            },
+                            "AltitudeMeters": 88.884314,
+                            "DistanceMeters": 2521.689154184459
+                        },
+                        {
+                            "Time": "2020-08-05T05:26:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824604,
+                                "LongitudeDegrees": -123.954041
+                            },
+                            "AltitudeMeters": 92.175608,
+                            "DistanceMeters": 2552.493659740202
+                        },
+                        {
+                            "Time": "2020-08-05T05:27:50Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825113,
+                                "LongitudeDegrees": -123.952953
+                            },
+                            "AltitudeMeters": 103.036906,
+                            "DistanceMeters": 2654.1487702705226
+                        },
+                        {
+                            "Time": "2020-08-05T05:28:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82514,
+                                "LongitudeDegrees": -123.952668
+                            },
+                            "AltitudeMeters": 105.420776,
+                            "DistanceMeters": 2676.4603345796654
+                        },
+                        {
+                            "Time": "2020-08-05T05:28:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825029,
+                                "LongitudeDegrees": -123.951957
+                            },
+                            "AltitudeMeters": 111.160463,
+                            "DistanceMeters": 2732.981679934713
+                        },
+                        {
+                            "Time": "2020-08-05T05:29:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825048,
+                                "LongitudeDegrees": -123.951706
+                            },
+                            "AltitudeMeters": 113.057371,
+                            "DistanceMeters": 2752.566975225083
+                        },
+                        {
+                            "Time": "2020-08-05T05:29:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825096,
+                                "LongitudeDegrees": -123.951605
+                            },
+                            "AltitudeMeters": 113.975877,
+                            "DistanceMeters": 2762.0504154910777
+                        },
+                        {
+                            "Time": "2020-08-05T05:29:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825184,
+                                "LongitudeDegrees": -123.951535
+                            },
+                            "AltitudeMeters": 115.060675,
+                            "DistanceMeters": 2773.250796832829
+                        },
+                        {
+                            "Time": "2020-08-05T05:29:50Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825417,
+                                "LongitudeDegrees": -123.951517
+                            },
+                            "AltitudeMeters": 117.576434,
+                            "DistanceMeters": 2799.2256446603988
+                        },
+                        {
+                            "Time": "2020-08-05T05:31:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826177,
+                                "LongitudeDegrees": -123.95169
+                            },
+                            "AltitudeMeters": 125.872926,
+                            "DistanceMeters": 2884.885709047892
+                        },
+                        {
+                            "Time": "2020-08-05T05:31:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826334,
+                                "LongitudeDegrees": -123.951617
+                            },
+                            "AltitudeMeters": 127.652245,
+                            "DistanceMeters": 2903.2572519249666
+                        },
+                        {
+                            "Time": "2020-08-05T05:31:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82637,
+                                "LongitudeDegrees": -123.951525
+                            },
+                            "AltitudeMeters": 128.421257,
+                            "DistanceMeters": 2911.4419841826293
+                        },
+                        {
+                            "Time": "2020-08-05T05:32:24Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826202,
+                                "LongitudeDegrees": -123.950544
+                            },
+                            "AltitudeMeters": 135.783854,
+                            "DistanceMeters": 2989.8034791440828
+                        },
+                        {
+                            "Time": "2020-08-05T05:33:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8258719,
+                                "LongitudeDegrees": -123.950035
+                            },
+                            "AltitudeMeters": 140.850948,
+                            "DistanceMeters": 3043.741088504655
+                        },
+                        {
+                            "Time": "2020-08-05T05:33:54Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825664,
+                                "LongitudeDegrees": -123.94937
+                            },
+                            "AltitudeMeters": 146.1635839,
+                            "DistanceMeters": 3100.279915907765
+                        },
+                        {
+                            "Time": "2020-08-05T05:34:23Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825469,
+                                "LongitudeDegrees": -123.948985
+                            },
+                            "AltitudeMeters": 149.273771,
+                            "DistanceMeters": 3137.2005429115407
+                        },
+                        {
+                            "Time": "2020-08-05T05:34:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825187,
+                                "LongitudeDegrees": -123.948678
+                            },
+                            "AltitudeMeters": 152.556833,
+                            "DistanceMeters": 3176.6034925466392
+                        },
+                        {
+                            "Time": "2020-08-05T05:35:15Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8250699,
+                                "LongitudeDegrees": -123.948335
+                            },
+                            "AltitudeMeters": 155.025118,
+                            "DistanceMeters": 3206.232474121968
+                        },
+                        {
+                            "Time": "2020-08-05T05:37:11Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824691,
+                                "LongitudeDegrees": -123.946364
+                            },
+                            "AltitudeMeters": 168.442048,
+                            "DistanceMeters": 3364.839908629696
+                        },
+                        {
+                            "Time": "2020-08-05T05:38:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824698,
+                                "LongitudeDegrees": -123.945048
+                            },
+                            "AltitudeMeters": 177.284559,
+                            "DistanceMeters": 3466.9292276532005
+                        },
+                        {
+                            "Time": "2020-08-05T05:38:52Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824779,
+                                "LongitudeDegrees": -123.944659
+                            },
+                            "AltitudeMeters": 180.012452,
+                            "DistanceMeters": 3498.4235354400457
+                        },
+                        {
+                            "Time": "2020-08-05T05:40:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825171,
+                                "LongitudeDegrees": -123.943576
+                            },
+                            "AltitudeMeters": 191.513883,
+                            "DistanceMeters": 3593.091882276462
+                        },
+                        {
+                            "Time": "2020-08-05T05:40:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82521,
+                                "LongitudeDegrees": -123.943324
+                            },
+                            "AltitudeMeters": 193.989749,
+                            "DistanceMeters": 3613.1164449108433
+                        },
+                        {
+                            "Time": "2020-08-05T05:41:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825239,
+                                "LongitudeDegrees": -123.942491
+                            },
+                            "AltitudeMeters": 201.98916,
+                            "DistanceMeters": 3677.814903899483
+                        },
+                        {
+                            "Time": "2020-08-05T05:42:36Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825111,
+                                "LongitudeDegrees": -123.94186
+                            },
+                            "AltitudeMeters": 208.6909719,
+                            "DistanceMeters": 3728.7949207149422
+                        },
+                        {
+                            "Time": "2020-08-05T05:42:52Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825122,
+                                "LongitudeDegrees": -123.941659
+                            },
+                            "AltitudeMeters": 210.8776,
+                            "DistanceMeters": 3744.4350265638363
+                        },
+                        {
+                            "Time": "2020-08-05T05:43:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825327,
+                                "LongitudeDegrees": -123.941316
+                            },
+                            "AltitudeMeters": 215.778341,
+                            "DistanceMeters": 3779.4881358800376
+                        },
+                        {
+                            "Time": "2020-08-05T05:46:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826108,
+                                "LongitudeDegrees": -123.939517
+                            },
+                            "AltitudeMeters": 238.442442,
+                            "DistanceMeters": 3943.9059795313387
+                        },
+                        {
+                            "Time": "2020-08-05T05:46:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82625,
+                                "LongitudeDegrees": -123.939315
+                            },
+                            "AltitudeMeters": 241.372434,
+                            "DistanceMeters": 3966.163543452374
+                        },
+                        {
+                            "Time": "2020-08-05T05:46:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826282,
+                                "LongitudeDegrees": -123.939212
+                            },
+                            "AltitudeMeters": 242.524015,
+                            "DistanceMeters": 3974.9114824315398
+                        },
+                        {
+                            "Time": "2020-08-05T05:47:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826618,
+                                "LongitudeDegrees": -123.938701
+                            },
+                            "AltitudeMeters": 249.69837,
+                            "DistanceMeters": 4029.411186002898
+                        },
+                        {
+                            "Time": "2020-08-05T05:48:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82726,
+                                "LongitudeDegrees": -123.938317
+                            },
+                            "AltitudeMeters": 259.890667,
+                            "DistanceMeters": 4106.836951169024
+                        },
+                        {
+                            "Time": "2020-08-05T05:49:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82747,
+                                "LongitudeDegrees": -123.938192
+                            },
+                            "AltitudeMeters": 263.221647,
+                            "DistanceMeters": 4132.145016401747
+                        },
+                        {
+                            "Time": "2020-08-05T05:50:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82786,
+                                "LongitudeDegrees": -123.93782
+                            },
+                            "AltitudeMeters": 270.082758,
+                            "DistanceMeters": 4184.274248621792
+                        },
+                        {
+                            "Time": "2020-08-05T05:50:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82799,
+                                "LongitudeDegrees": -123.93758
+                            },
+                            "AltitudeMeters": 273.186239,
+                            "DistanceMeters": 4207.853828043613
+                        },
+                        {
+                            "Time": "2020-08-05T05:51:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828085,
+                                "LongitudeDegrees": -123.937131
+                            },
+                            "AltitudeMeters": 277.976903,
+                            "DistanceMeters": 4244.252259948095
+                        },
+                        {
+                            "Time": "2020-08-05T05:51:34Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828094,
+                                "LongitudeDegrees": -123.936877
+                            },
+                            "AltitudeMeters": 280.5734299,
+                            "DistanceMeters": 4263.980109942657
+                        },
+                        {
+                            "Time": "2020-08-05T05:52:11Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828091,
+                                "LongitudeDegrees": -123.936419
+                            },
+                            "AltitudeMeters": 285.249522,
+                            "DistanceMeters": 4299.508041309529
+                        },
+                        {
+                            "Time": "2020-08-05T05:53:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828041,
+                                "LongitudeDegrees": -123.935468
+                            },
+                            "AltitudeMeters": 295.6130319,
+                            "DistanceMeters": 4373.485380271748
+                        },
+                        {
+                            "Time": "2020-08-05T05:53:45Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828061,
+                                "LongitudeDegrees": -123.935271
+                            },
+                            "AltitudeMeters": 297.786458,
+                            "DistanceMeters": 4388.927716477012
+                        },
+                        {
+                            "Time": "2020-08-05T05:55:04Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828315,
+                                "LongitudeDegrees": -123.934402
+                            },
+                            "AltitudeMeters": 308.074461,
+                            "DistanceMeters": 4462.024663237645
+                        },
+                        {
+                            "Time": "2020-08-05T05:55:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828349,
+                                "LongitudeDegrees": -123.934093
+                            },
+                            "AltitudeMeters": 311.489707,
+                            "DistanceMeters": 4486.2902084824345
+                        },
+                        {
+                            "Time": "2020-08-05T05:55:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828327,
+                                "LongitudeDegrees": -123.933787
+                            },
+                            "AltitudeMeters": 314.847352,
+                            "DistanceMeters": 4510.15206488724
+                        },
+                        {
+                            "Time": "2020-08-05T05:56:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8281769,
+                                "LongitudeDegrees": -123.932991
+                            },
+                            "AltitudeMeters": 323.839928,
+                            "DistanceMeters": 4574.117301825833
+                        },
+                        {
+                            "Time": "2020-08-05T05:57:36Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828126,
+                                "LongitudeDegrees": -123.932449
+                            },
+                            "AltitudeMeters": 329.804344,
+                            "DistanceMeters": 4616.539472927445
+                        },
+                        {
+                            "Time": "2020-08-05T05:58:54Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827902,
+                                "LongitudeDegrees": -123.931612
+                            },
+                            "AltitudeMeters": 339.582313,
+                            "DistanceMeters": 4686.088150792323
+                        },
+                        {
+                            "Time": "2020-08-05T05:59:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827584,
+                                "LongitudeDegrees": -123.931167
+                            },
+                            "AltitudeMeters": 346.201656,
+                            "DistanceMeters": 4735.531272954865
+                        },
+                        {
+                            "Time": "2020-08-05T06:00:04Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827581,
+                                "LongitudeDegrees": -123.930963
+                            },
+                            "AltitudeMeters": 348.253336,
+                            "DistanceMeters": 4751.358910496458
+                        },
+                        {
+                            "Time": "2020-08-05T06:00:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8276449,
+                                "LongitudeDegrees": -123.930868
+                            },
+                            "AltitudeMeters": 349.581993,
+                            "DistanceMeters": 4761.601070554937
+                        },
+                        {
+                            "Time": "2020-08-05T06:00:50Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827461,
+                                "LongitudeDegrees": -123.930511
+                            },
+                            "AltitudeMeters": 354.0468619,
+                            "DistanceMeters": 4796.038586364151
+                        },
+                        {
+                            "Time": "2020-08-05T06:01:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827188,
+                                "LongitudeDegrees": -123.930266
+                            },
+                            "AltitudeMeters": 358.693074,
+                            "DistanceMeters": 4831.88167924495
+                        },
+                        {
+                            "Time": "2020-08-05T06:02:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826686,
+                                "LongitudeDegrees": -123.930302
+                            },
+                            "AltitudeMeters": 365.945903,
+                            "DistanceMeters": 4887.833469541413
+                        },
+                        {
+                            "Time": "2020-08-05T06:02:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826301,
+                                "LongitudeDegrees": -123.9305
+                            },
+                            "AltitudeMeters": 369.854515,
+                            "DistanceMeters": 4933.360231481109
+                        },
+                        {
+                            "Time": "2020-08-05T06:03:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825885,
+                                "LongitudeDegrees": -123.930584
+                            },
+                            "AltitudeMeters": 372.575318,
+                            "DistanceMeters": 4980.125049116708
+                        },
+                        {
+                            "Time": "2020-08-05T06:04:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825339,
+                                "LongitudeDegrees": -123.93096
+                            },
+                            "AltitudeMeters": 376.497625,
+                            "DistanceMeters": 5047.54118861012
+                        },
+                        {
+                            "Time": "2020-08-05T06:04:24Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825032,
+                                "LongitudeDegrees": -123.931011
+                            },
+                            "AltitudeMeters": 378.499217,
+                            "DistanceMeters": 5081.944303335725
+                        },
+                        {
+                            "Time": "2020-08-05T06:04:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824879,
+                                "LongitudeDegrees": -123.930995
+                            },
+                            "AltitudeMeters": 379.492763,
+                            "DistanceMeters": 5099.021250776831
+                        },
+                        {
+                            "Time": "2020-08-05T06:04:50Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8245829,
+                                "LongitudeDegrees": -123.930773
+                            },
+                            "AltitudeMeters": 380.989925,
+                            "DistanceMeters": 5136.210393008826
+                        },
+                        {
+                            "Time": "2020-08-05T06:05:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824293,
+                                "LongitudeDegrees": -123.930391
+                            },
+                            "AltitudeMeters": 382.582984,
+                            "DistanceMeters": 5180.0231735413045
+                        },
+                        {
+                            "Time": "2020-08-05T06:05:24Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824118,
+                                "LongitudeDegrees": -123.930247
+                            },
+                            "AltitudeMeters": 383.399356,
+                            "DistanceMeters": 5202.479457603904
+                        },
+                        {
+                            "Time": "2020-08-05T06:05:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823673,
+                                "LongitudeDegrees": -123.930352
+                            },
+                            "AltitudeMeters": 385.224392,
+                            "DistanceMeters": 5252.68153978619
+                        },
+                        {
+                            "Time": "2020-08-05T06:06:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823468,
+                                "LongitudeDegrees": -123.930339
+                            },
+                            "AltitudeMeters": 386.054809,
+                            "DistanceMeters": 5275.524175227587
+                        },
+                        {
+                            "Time": "2020-08-05T06:06:02Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823459,
+                                "LongitudeDegrees": -123.930328
+                            },
+                            "AltitudeMeters": 386.102651,
+                            "DistanceMeters": 5276.8401937951
+                        },
+                        {
+                            "Time": "2020-08-05T06:06:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82306,
+                                "LongitudeDegrees": -123.929867
+                            },
+                            "AltitudeMeters": 388.012836,
+                            "DistanceMeters": 5333.864166492044
+                        },
+                        {
+                            "Time": "2020-08-05T06:06:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822843,
+                                "LongitudeDegrees": -123.929798
+                            },
+                            "AltitudeMeters": 388.768144,
+                            "DistanceMeters": 5358.606298307183
+                        },
+                        {
+                            "Time": "2020-08-05T06:07:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822425,
+                                "LongitudeDegrees": -123.929988
+                            },
+                            "AltitudeMeters": 390.258173,
+                            "DistanceMeters": 5407.416249226462
+                        },
+                        {
+                            "Time": "2020-08-05T06:07:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8220699,
+                                "LongitudeDegrees": -123.930063
+                            },
+                            "AltitudeMeters": 391.477557,
+                            "DistanceMeters": 5447.371465156333
+                        },
+                        {
+                            "Time": "2020-08-05T06:07:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.821523,
+                                "LongitudeDegrees": -123.929853
+                            },
+                            "AltitudeMeters": 393.250137,
+                            "DistanceMeters": 5510.393778424151
+                        },
+                        {
+                            "Time": "2020-08-05T06:08:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82111,
+                                "LongitudeDegrees": -123.930057
+                            },
+                            "AltitudeMeters": 393.002113,
+                            "DistanceMeters": 5559.016102869003
+                        },
+                        {
+                            "Time": "2020-08-05T06:08:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.820844,
+                                "LongitudeDegrees": -123.93011
+                            },
+                            "AltitudeMeters": 392.849619,
+                            "DistanceMeters": 5588.911017781586
+                        },
+                        {
+                            "Time": "2020-08-05T06:08:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.820409,
+                                "LongitudeDegrees": -123.930358
+                            },
+                            "AltitudeMeters": 392.583826,
+                            "DistanceMeters": 5641.016825834523
+                        },
+                        {
+                            "Time": "2020-08-05T06:08:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.820233,
+                                "LongitudeDegrees": -123.930375
+                            },
+                            "AltitudeMeters": 392.483661,
+                            "DistanceMeters": 5660.653281681304
+                        },
+                        {
+                            "Time": "2020-08-05T06:08:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.820091,
+                                "LongitudeDegrees": -123.930333
+                            },
+                            "AltitudeMeters": 392.401332,
+                            "DistanceMeters": 5676.792883736383
+                        },
+                        {
+                            "Time": "2020-08-05T06:09:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.819923,
+                                "LongitudeDegrees": -123.930149
+                            },
+                            "AltitudeMeters": 392.281321,
+                            "DistanceMeters": 5700.319779961446
+                        },
+                        {
+                            "Time": "2020-08-05T06:09:06Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.819716,
+                                "LongitudeDegrees": -123.930095
+                            },
+                            "AltitudeMeters": 392.038076,
+                            "DistanceMeters": 5723.740503583062
+                        },
+                        {
+                            "Time": "2020-08-05T06:09:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.819369,
+                                "LongitudeDegrees": -123.930145
+                            },
+                            "AltitudeMeters": 391.563566,
+                            "DistanceMeters": 5762.5624214125055
+                        },
+                        {
+                            "Time": "2020-08-05T06:09:31Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.818985,
+                                "LongitudeDegrees": -123.930095
+                            },
+                            "AltitudeMeters": 391.038941,
+                            "DistanceMeters": 5805.484499904209
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:10Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817935,
+                                "LongitudeDegrees": -123.929434
+                            },
+                            "AltitudeMeters": 389.694291,
+                            "DistanceMeters": 5933.124068664722
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:15Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817798,
+                                "LongitudeDegrees": -123.929429
+                            },
+                            "AltitudeMeters": 389.631669,
+                            "DistanceMeters": 5948.379683085223
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817483,
+                                "LongitudeDegrees": -123.929643
+                            },
+                            "AltitudeMeters": 389.47241,
+                            "DistanceMeters": 5987.1770644483395
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:35Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8172659,
+                                "LongitudeDegrees": -123.929702
+                            },
+                            "AltitudeMeters": 389.371487,
+                            "DistanceMeters": 6011.774060228488
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817232,
+                                "LongitudeDegrees": -123.929626
+                            },
+                            "AltitudeMeters": 389.342726,
+                            "DistanceMeters": 6018.774620975032
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.816922,
+                                "LongitudeDegrees": -123.929548
+                            },
+                            "AltitudeMeters": 389.19891,
+                            "DistanceMeters": 6053.810050032307
+                        },
+                        {
+                            "Time": "2020-08-05T06:10:56Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.816739,
+                                "LongitudeDegrees": -123.929438
+                            },
+                            "AltitudeMeters": 389.108246,
+                            "DistanceMeters": 6075.8968201244925
+                        },
+                        {
+                            "Time": "2020-08-05T06:11:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.816114,
+                                "LongitudeDegrees": -123.92859
+                            },
+                            "AltitudeMeters": 388.877955,
+                            "DistanceMeters": 6171.652488028601
+                        },
+                        {
+                            "Time": "2020-08-05T06:11:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.815851,
+                                "LongitudeDegrees": -123.9285
+                            },
+                            "AltitudeMeters": 388.829963,
+                            "DistanceMeters": 6201.750530349532
+                        },
+                        {
+                            "Time": "2020-08-05T06:12:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.815147,
+                                "LongitudeDegrees": -123.928516
+                            },
+                            "AltitudeMeters": 388.704985,
+                            "DistanceMeters": 6280.128828485763
+                        },
+                        {
+                            "Time": "2020-08-05T06:12:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8149299,
+                                "LongitudeDegrees": -123.928453
+                            },
+                            "AltitudeMeters": 388.665687,
+                            "DistanceMeters": 6304.785502396406
+                        },
+                        {
+                            "Time": "2020-08-05T06:12:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.814439,
+                                "LongitudeDegrees": -123.92776
+                            },
+                            "AltitudeMeters": 389.174576,
+                            "DistanceMeters": 6381.448521181179
+                        },
+                        {
+                            "Time": "2020-08-05T06:13:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.813252,
+                                "LongitudeDegrees": -123.92683
+                            },
+                            "AltitudeMeters": 391.369431,
+                            "DistanceMeters": 6532.002284313806
+                        },
+                        {
+                            "Time": "2020-08-05T06:15:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8121859,
+                                "LongitudeDegrees": -123.925144
+                            },
+                            "AltitudeMeters": 400.878497,
+                            "DistanceMeters": 6708.629600827488
+                        },
+                        {
+                            "Time": "2020-08-05T06:16:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811673,
+                                "LongitudeDegrees": -123.924734
+                            },
+                            "AltitudeMeters": 405.924865,
+                            "DistanceMeters": 6773.989464161827
+                        },
+                        {
+                            "Time": "2020-08-05T06:17:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811073,
+                                "LongitudeDegrees": -123.92475
+                            },
+                            "AltitudeMeters": 411.081878,
+                            "DistanceMeters": 6840.792307933858
+                        },
+                        {
+                            "Time": "2020-08-05T06:17:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810851,
+                                "LongitudeDegrees": -123.924878
+                            },
+                            "AltitudeMeters": 413.137945,
+                            "DistanceMeters": 6867.426172130497
+                        },
+                        {
+                            "Time": "2020-08-05T06:17:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810533,
+                                "LongitudeDegrees": -123.92479
+                            },
+                            "AltitudeMeters": 415.921063,
+                            "DistanceMeters": 6903.478089765249
+                        },
+                        {
+                            "Time": "2020-08-05T06:18:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810329,
+                                "LongitudeDegrees": -123.924848
+                            },
+                            "AltitudeMeters": 416.86792,
+                            "DistanceMeters": 6926.628776292195
+                        },
+                        {
+                            "Time": "2020-08-05T06:18:24Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810148,
+                                "LongitudeDegrees": -123.925074
+                            },
+                            "AltitudeMeters": 417.743934,
+                            "DistanceMeters": 6953.339921333006
+                        },
+                        {
+                            "Time": "2020-08-05T06:18:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810021,
+                                "LongitudeDegrees": -123.925369
+                            },
+                            "AltitudeMeters": 418.626273,
+                            "DistanceMeters": 6980.243926449056
+                        },
+                        {
+                            "Time": "2020-08-05T06:18:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809996,
+                                "LongitudeDegrees": -123.925955
+                            },
+                            "AltitudeMeters": 420.120286,
+                            "DistanceMeters": 7025.798904263617
+                        },
+                        {
+                            "Time": "2020-08-05T06:19:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809922,
+                                "LongitudeDegrees": -123.926144
+                            },
+                            "AltitudeMeters": 420.671926,
+                            "DistanceMeters": 7042.619325073057
+                        },
+                        {
+                            "Time": "2020-08-05T06:19:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809738,
+                                "LongitudeDegrees": -123.926433
+                            },
+                            "AltitudeMeters": 421.667971,
+                            "DistanceMeters": 7072.990434505896
+                        },
+                        {
+                            "Time": "2020-08-05T06:19:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809645,
+                                "LongitudeDegrees": -123.926497
+                            },
+                            "AltitudeMeters": 422.044537,
+                            "DistanceMeters": 7084.472542452614
+                        },
+                        {
+                            "Time": "2020-08-05T06:19:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809533,
+                                "LongitudeDegrees": -123.926475
+                            },
+                            "AltitudeMeters": 422.45724,
+                            "DistanceMeters": 7097.056576349098
+                        },
+                        {
+                            "Time": "2020-08-05T06:19:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809321,
+                                "LongitudeDegrees": -123.926007
+                            },
+                            "AltitudeMeters": 424.182593,
+                            "DistanceMeters": 7140.3655050166235
+                        },
+                        {
+                            "Time": "2020-08-05T06:20:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80929,
+                                "LongitudeDegrees": -123.92554
+                            },
+                            "AltitudeMeters": 425.718628,
+                            "DistanceMeters": 7176.76615331928
+                        },
+                        {
+                            "Time": "2020-08-05T06:20:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809195,
+                                "LongitudeDegrees": -123.925253
+                            },
+                            "AltitudeMeters": 426.758941,
+                            "DistanceMeters": 7201.419264006167
+                        },
+                        {
+                            "Time": "2020-08-05T06:20:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808892,
+                                "LongitudeDegrees": -123.924883
+                            },
+                            "AltitudeMeters": 428.628062,
+                            "DistanceMeters": 7245.7132778238865
+                        },
+                        {
+                            "Time": "2020-08-05T06:21:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808589,
+                                "LongitudeDegrees": -123.924657
+                            },
+                            "AltitudeMeters": 430.232263,
+                            "DistanceMeters": 7283.729298806832
+                        },
+                        {
+                            "Time": "2020-08-05T06:21:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8084429,
+                                "LongitudeDegrees": -123.924471
+                            },
+                            "AltitudeMeters": 431.149477,
+                            "DistanceMeters": 7305.473571420263
+                        },
+                        {
+                            "Time": "2020-08-05T06:21:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808465,
+                                "LongitudeDegrees": -123.924264
+                            },
+                            "AltitudeMeters": 432.400169,
+                            "DistanceMeters": 7321.723218715001
+                        },
+                        {
+                            "Time": "2020-08-05T06:22:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808709,
+                                "LongitudeDegrees": -123.923788
+                            },
+                            "AltitudeMeters": 436.24479,
+                            "DistanceMeters": 7367.570756307329
+                        },
+                        {
+                            "Time": "2020-08-05T06:22:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808786,
+                                "LongitudeDegrees": -123.922976
+                            },
+                            "AltitudeMeters": 441.577055,
+                            "DistanceMeters": 7431.158609509901
+                        },
+                        {
+                            "Time": "2020-08-05T06:23:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808717,
+                                "LongitudeDegrees": -123.922707
+                            },
+                            "AltitudeMeters": 443.442158,
+                            "DistanceMeters": 7453.400168481937
+                        },
+                        {
+                            "Time": "2020-08-05T06:24:02Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80816,
+                                "LongitudeDegrees": -123.922501
+                            },
+                            "AltitudeMeters": 448.422104,
+                            "DistanceMeters": 7517.432052315686
+                        },
+                        {
+                            "Time": "2020-08-05T06:24:46Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807535,
+                                "LongitudeDegrees": -123.922382
+                            },
+                            "AltitudeMeters": 451.286462,
+                            "DistanceMeters": 7587.616431143292
+                        },
+                        {
+                            "Time": "2020-08-05T06:24:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807367,
+                                "LongitudeDegrees": -123.922429
+                            },
+                            "AltitudeMeters": 452.064086,
+                            "DistanceMeters": 7606.670293990814
+                        },
+                        {
+                            "Time": "2020-08-05T06:25:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80706,
+                                "LongitudeDegrees": -123.922678
+                            },
+                            "AltitudeMeters": 453.666313,
+                            "DistanceMeters": 7645.929108465621
+                        },
+                        {
+                            "Time": "2020-08-05T06:25:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80686,
+                                "LongitudeDegrees": -123.922662
+                            },
+                            "AltitudeMeters": 454.576351,
+                            "DistanceMeters": 7668.227469350245
+                        },
+                        {
+                            "Time": "2020-08-05T06:25:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.806361,
+                                "LongitudeDegrees": -123.922543
+                            },
+                            "AltitudeMeters": 455.97716,
+                            "DistanceMeters": 7724.537881006096
+                        },
+                        {
+                            "Time": "2020-08-05T06:25:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.806211,
+                                "LongitudeDegrees": -123.922394
+                            },
+                            "AltitudeMeters": 455.66221,
+                            "DistanceMeters": 7744.84804046317
+                        },
+                        {
+                            "Time": "2020-08-05T06:26:06Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.805918,
+                                "LongitudeDegrees": -123.922289
+                            },
+                            "AltitudeMeters": 455.140883,
+                            "DistanceMeters": 7778.466776835015
+                        },
+                        {
+                            "Time": "2020-08-05T06:26:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.805279,
+                                "LongitudeDegrees": -123.922359
+                            },
+                            "AltitudeMeters": 454.034613,
+                            "DistanceMeters": 7849.806621688411
+                        },
+                        {
+                            "Time": "2020-08-05T06:26:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804912,
+                                "LongitudeDegrees": -123.922219
+                            },
+                            "AltitudeMeters": 453.37907,
+                            "DistanceMeters": 7892.080475310706
+                        },
+                        {
+                            "Time": "2020-08-05T06:26:45Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804647,
+                                "LongitudeDegrees": -123.92223
+                            },
+                            "AltitudeMeters": 452.899696,
+                            "DistanceMeters": 7921.592316884562
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:04Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804082,
+                                "LongitudeDegrees": -123.922595
+                            },
+                            "AltitudeMeters": 451.712598,
+                            "DistanceMeters": 7990.571156234195
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803856,
+                                "LongitudeDegrees": -123.922737
+                            },
+                            "AltitudeMeters": 451.239927,
+                            "DistanceMeters": 8018.036720614809
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803585,
+                                "LongitudeDegrees": -123.922911
+                            },
+                            "AltitudeMeters": 450.671124,
+                            "DistanceMeters": 8051.088175609482
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803495,
+                                "LongitudeDegrees": -123.92312
+                            },
+                            "AltitudeMeters": 450.343044,
+                            "DistanceMeters": 8070.151988426574
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:35Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803472,
+                                "LongitudeDegrees": -123.923389
+                            },
+                            "AltitudeMeters": 449.981099,
+                            "DistanceMeters": 8091.183557547708
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:41Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80357,
+                                "LongitudeDegrees": -123.923512
+                            },
+                            "AltitudeMeters": 449.731636,
+                            "DistanceMeters": 8105.679116706954
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8037459,
+                                "LongitudeDegrees": -123.923603
+                            },
+                            "AltitudeMeters": 449.848305,
+                            "DistanceMeters": 8126.494601307043
+                        },
+                        {
+                            "Time": "2020-08-05T06:27:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803947,
+                                "LongitudeDegrees": -123.92363
+                            },
+                            "AltitudeMeters": 450.073228,
+                            "DistanceMeters": 8148.978661266881
+                        },
+                        {
+                            "Time": "2020-08-05T06:28:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804385,
+                                "LongitudeDegrees": -123.923855
+                            },
+                            "AltitudeMeters": 450.591569,
+                            "DistanceMeters": 8200.768377094042
+                        },
+                        {
+                            "Time": "2020-08-05T06:28:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804626,
+                                "LongitudeDegrees": -123.924472
+                            },
+                            "AltitudeMeters": 451.140877,
+                            "DistanceMeters": 8255.652162919927
+                        },
+                        {
+                            "Time": "2020-08-05T06:28:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804649,
+                                "LongitudeDegrees": -123.924862
+                            },
+                            "AltitudeMeters": 451.444863,
+                            "DistanceMeters": 8286.024720482712
+                        },
+                        {
+                            "Time": "2020-08-05T06:29:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804139,
+                                "LongitudeDegrees": -123.926686
+                            },
+                            "AltitudeMeters": 445.752349,
+                            "DistanceMeters": 8438.530954911685
+                        },
+                        {
+                            "Time": "2020-08-05T06:29:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803767,
+                                "LongitudeDegrees": -123.927287
+                            },
+                            "AltitudeMeters": 442.893268,
+                            "DistanceMeters": 8500.901000178166
+                        },
+                        {
+                            "Time": "2020-08-05T06:30:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803641,
+                                "LongitudeDegrees": -123.927342
+                            },
+                            "AltitudeMeters": 441.800169,
+                            "DistanceMeters": 8515.562192038286
+                        },
+                        {
+                            "Time": "2020-08-05T06:30:04Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803506,
+                                "LongitudeDegrees": -123.927278
+                            },
+                            "AltitudeMeters": 439.975932,
+                            "DistanceMeters": 8531.389665424434
+                        },
+                        {
+                            "Time": "2020-08-05T06:30:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803102,
+                                "LongitudeDegrees": -123.926763
+                            },
+                            "AltitudeMeters": 433.041484,
+                            "DistanceMeters": 8591.554432686402
+                        },
+                        {
+                            "Time": "2020-08-05T06:30:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802833,
+                                "LongitudeDegrees": -123.926248
+                            },
+                            "AltitudeMeters": 427.285575,
+                            "DistanceMeters": 8641.493933878948
+                        },
+                        {
+                            "Time": "2020-08-05T06:30:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80262,
+                                "LongitudeDegrees": -123.925658
+                            },
+                            "AltitudeMeters": 421.342719,
+                            "DistanceMeters": 8693.055433843081
+                        },
+                        {
+                            "Time": "2020-08-05T06:30:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802444,
+                                "LongitudeDegrees": -123.924553
+                            },
+                            "AltitudeMeters": 413.432076,
+                            "DistanceMeters": 8781.017613791166
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802354,
+                                "LongitudeDegrees": -123.924231
+                            },
+                            "AltitudeMeters": 411.1702639,
+                            "DistanceMeters": 8807.939782870058
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:10Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80222,
+                                "LongitudeDegrees": -123.924081
+                            },
+                            "AltitudeMeters": 409.580633,
+                            "DistanceMeters": 8826.861034318244
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801921,
+                                "LongitudeDegrees": -123.924022
+                            },
+                            "AltitudeMeters": 406.757983,
+                            "DistanceMeters": 8860.458820493837
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8018379,
+                                "LongitudeDegrees": -123.923861
+                            },
+                            "AltitudeMeters": 405.452459,
+                            "DistanceMeters": 8876.004999047667
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801853,
+                                "LongitudeDegrees": -123.923421
+                            },
+                            "AltitudeMeters": 402.589816,
+                            "DistanceMeters": 8910.192566321239
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802149,
+                                "LongitudeDegrees": -123.922933
+                            },
+                            "AltitudeMeters": 400.341034,
+                            "DistanceMeters": 8960.391688205085
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802235,
+                                "LongitudeDegrees": -123.922675
+                            },
+                            "AltitudeMeters": 399.346849,
+                            "DistanceMeters": 8982.58470363527
+                        },
+                        {
+                            "Time": "2020-08-05T06:31:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802182,
+                                "LongitudeDegrees": -123.922257
+                            },
+                            "AltitudeMeters": 397.869845,
+                            "DistanceMeters": 9015.555567383804
+                        },
+                        {
+                            "Time": "2020-08-05T06:32:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802194,
+                                "LongitudeDegrees": -123.921908
+                            },
+                            "AltitudeMeters": 396.655082,
+                            "DistanceMeters": 9042.672483587974
+                        },
+                        {
+                            "Time": "2020-08-05T06:32:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802294,
+                                "LongitudeDegrees": -123.921586
+                            },
+                            "AltitudeMeters": 395.429609,
+                            "DistanceMeters": 9070.028492879424
+                        },
+                        {
+                            "Time": "2020-08-05T06:32:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8022909,
+                                "LongitudeDegrees": -123.921329
+                            },
+                            "AltitudeMeters": 394.5360329,
+                            "DistanceMeters": 9089.975814285743
+                        },
+                        {
+                            "Time": "2020-08-05T06:32:31Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802186,
+                                "LongitudeDegrees": -123.92068
+                            },
+                            "AltitudeMeters": 392.0561829,
+                            "DistanceMeters": 9141.677126491362
+                        },
+                        {
+                            "Time": "2020-08-05T06:32:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802089,
+                                "LongitudeDegrees": -123.920422
+                            },
+                            "AltitudeMeters": 390.918966,
+                            "DistanceMeters": 9164.425216151849
+                        },
+                        {
+                            "Time": "2020-08-05T06:32:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801659,
+                                "LongitudeDegrees": -123.919768
+                            },
+                            "AltitudeMeters": 387.431276,
+                            "DistanceMeters": 9234.19050015217
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801574,
+                                "LongitudeDegrees": -123.919487
+                            },
+                            "AltitudeMeters": 386.2429,
+                            "DistanceMeters": 9257.961938472556
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80155,
+                                "LongitudeDegrees": -123.919408
+                            },
+                            "AltitudeMeters": 385.908572,
+                            "DistanceMeters": 9264.649598591082
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801315,
+                                "LongitudeDegrees": -123.919065
+                            },
+                            "AltitudeMeters": 384.042802,
+                            "DistanceMeters": 9301.971154055502
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801053,
+                                "LongitudeDegrees": -123.918421
+                            },
+                            "AltitudeMeters": 380.9217059,
+                            "DistanceMeters": 9359.836974555508
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:34Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800952,
+                                "LongitudeDegrees": -123.91803
+                            },
+                            "AltitudeMeters": 379.154566,
+                            "DistanceMeters": 9392.196978348928
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800716,
+                                "LongitudeDegrees": -123.917702
+                            },
+                            "AltitudeMeters": 377.156951,
+                            "DistanceMeters": 9428.777454140867
+                        },
+                        {
+                            "Time": "2020-08-05T06:33:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800375,
+                                "LongitudeDegrees": -123.917341
+                            },
+                            "AltitudeMeters": 374.580573,
+                            "DistanceMeters": 9475.956276009185
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:11Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800707,
+                                "LongitudeDegrees": -123.917979
+                            },
+                            "AltitudeMeters": 371.287644,
+                            "DistanceMeters": 9537.74169384055
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800812,
+                                "LongitudeDegrees": -123.918233
+                            },
+                            "AltitudeMeters": 370.104694,
+                            "DistanceMeters": 9560.65863193802
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800884,
+                                "LongitudeDegrees": -123.918865
+                            },
+                            "AltitudeMeters": 367.539339,
+                            "DistanceMeters": 9610.356456777916
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800868,
+                                "LongitudeDegrees": -123.919322
+                            },
+                            "AltitudeMeters": 365.706304,
+                            "DistanceMeters": 9645.867273895963
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80078,
+                                "LongitudeDegrees": -123.919733
+                            },
+                            "AltitudeMeters": 363.983949,
+                            "DistanceMeters": 9679.233934075693
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:54Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800787,
+                                "LongitudeDegrees": -123.920057
+                            },
+                            "AltitudeMeters": 362.68539,
+                            "DistanceMeters": 9704.390518790931
+                        },
+                        {
+                            "Time": "2020-08-05T06:34:58Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800866,
+                                "LongitudeDegrees": -123.920256
+                            },
+                            "AltitudeMeters": 361.352486,
+                            "DistanceMeters": 9722.162552897715
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801087,
+                                "LongitudeDegrees": -123.920427
+                            },
+                            "AltitudeMeters": 358.883839,
+                            "DistanceMeters": 9750.115061454122
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801206,
+                                "LongitudeDegrees": -123.920824
+                            },
+                            "AltitudeMeters": 355.922017,
+                            "DistanceMeters": 9783.651791293498
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801121,
+                                "LongitudeDegrees": -123.921261
+                            },
+                            "AltitudeMeters": 352.812502,
+                            "DistanceMeters": 9818.860859706136
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801005,
+                                "LongitudeDegrees": -123.921564
+                            },
+                            "AltitudeMeters": 350.443261,
+                            "DistanceMeters": 9845.68779334887
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800855,
+                                "LongitudeDegrees": -123.921747
+                            },
+                            "AltitudeMeters": 348.507326,
+                            "DistanceMeters": 9867.608399668312
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800645,
+                                "LongitudeDegrees": -123.921876
+                            },
+                            "AltitudeMeters": 346.261417,
+                            "DistanceMeters": 9893.038838425646
+                        },
+                        {
+                            "Time": "2020-08-05T06:35:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800481,
+                                "LongitudeDegrees": -123.922155
+                            },
+                            "AltitudeMeters": 343.656431,
+                            "DistanceMeters": 9921.360464094112
+                        },
+                        {
+                            "Time": "2020-08-05T06:36:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800392,
+                                "LongitudeDegrees": -123.923103
+                            },
+                            "AltitudeMeters": 336.352449,
+                            "DistanceMeters": 9995.595989026018
+                        },
+                        {
+                            "Time": "2020-08-05T06:36:23Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800417,
+                                "LongitudeDegrees": -123.924343
+                            },
+                            "AltitudeMeters": 326.880218,
+                            "DistanceMeters": 10091.86896399262
+                        },
+                        {
+                            "Time": "2020-08-05T06:36:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800342,
+                                "LongitudeDegrees": -123.925159
+                            },
+                            "AltitudeMeters": 321.263678,
+                            "DistanceMeters": 10155.744324110077
+                        },
+                        {
+                            "Time": "2020-08-05T06:36:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800398,
+                                "LongitudeDegrees": -123.925481
+                            },
+                            "AltitudeMeters": 319.11667,
+                            "DistanceMeters": 10181.499621650239
+                        },
+                        {
+                            "Time": "2020-08-05T06:36:50Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800585,
+                                "LongitudeDegrees": -123.925652
+                            },
+                            "AltitudeMeters": 317.058721,
+                            "DistanceMeters": 10206.186573026296
+                        },
+                        {
+                            "Time": "2020-08-05T06:36:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80066,
+                                "LongitudeDegrees": -123.925899
+                            },
+                            "AltitudeMeters": 315.315782,
+                            "DistanceMeters": 10227.0947005765
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800652,
+                                "LongitudeDegrees": -123.926184
+                            },
+                            "AltitudeMeters": 313.470499,
+                            "DistanceMeters": 10249.230531375339
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:07Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800559,
+                                "LongitudeDegrees": -123.926559
+                            },
+                            "AltitudeMeters": 310.895529,
+                            "DistanceMeters": 10280.119610212168
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800574,
+                                "LongitudeDegrees": -123.926795
+                            },
+                            "AltitudeMeters": 309.362408,
+                            "DistanceMeters": 10298.510779750457
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800645,
+                                "LongitudeDegrees": -123.927036
+                            },
+                            "AltitudeMeters": 307.686774,
+                            "DistanceMeters": 10318.815417652742
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.800997,
+                                "LongitudeDegrees": -123.927455
+                            },
+                            "AltitudeMeters": 303.560494,
+                            "DistanceMeters": 10369.734634725168
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801128,
+                                "LongitudeDegrees": -123.927873
+                            },
+                            "AltitudeMeters": 300.678341,
+                            "DistanceMeters": 10405.301044204154
+                        },
+                        {
+                            "Time": "2020-08-05T06:37:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801408,
+                                "LongitudeDegrees": -123.92841
+                            },
+                            "AltitudeMeters": 296.4611499,
+                            "DistanceMeters": 10457.342128392434
+                        },
+                        {
+                            "Time": "2020-08-05T06:38:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.801677,
+                                "LongitudeDegrees": -123.929161
+                            },
+                            "AltitudeMeters": 291.276678,
+                            "DistanceMeters": 10522.866523082277
+                        },
+                        {
+                            "Time": "2020-08-05T06:38:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802309,
+                                "LongitudeDegrees": -123.929955
+                            },
+                            "AltitudeMeters": 284.750762,
+                            "DistanceMeters": 10616.38884152302
+                        },
+                        {
+                            "Time": "2020-08-05T06:38:36Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802631,
+                                "LongitudeDegrees": -123.930158
+                            },
+                            "AltitudeMeters": 282.018643,
+                            "DistanceMeters": 10655.542610589038
+                        },
+                        {
+                            "Time": "2020-08-05T06:38:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8027919,
+                                "LongitudeDegrees": -123.930416
+                            },
+                            "AltitudeMeters": 280.143564,
+                            "DistanceMeters": 10682.406773301289
+                        },
+                        {
+                            "Time": "2020-08-05T06:38:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802777,
+                                "LongitudeDegrees": -123.931178
+                            },
+                            "AltitudeMeters": 277.789899,
+                            "DistanceMeters": 10741.564076976778
+                        },
+                        {
+                            "Time": "2020-08-05T06:39:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.802923,
+                                "LongitudeDegrees": -123.931832
+                            },
+                            "AltitudeMeters": 277.263746,
+                            "DistanceMeters": 10794.855637692792
+                        },
+                        {
+                            "Time": "2020-08-05T06:39:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803039,
+                                "LongitudeDegrees": -123.931982
+                            },
+                            "AltitudeMeters": 277.0921,
+                            "DistanceMeters": 10812.24088709636
+                        },
+                        {
+                            "Time": "2020-08-05T06:39:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803517,
+                                "LongitudeDegrees": -123.931982
+                            },
+                            "AltitudeMeters": 276.566748,
+                            "DistanceMeters": 10865.451295015991
+                        },
+                        {
+                            "Time": "2020-08-05T06:39:45Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803618,
+                                "LongitudeDegrees": -123.93209
+                            },
+                            "AltitudeMeters": 276.428294,
+                            "DistanceMeters": 10879.474569170916
+                        },
+                        {
+                            "Time": "2020-08-05T06:40:02Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803663,
+                                "LongitudeDegrees": -123.932583
+                            },
+                            "AltitudeMeters": 276.239254,
+                            "DistanceMeters": 10918.059180681901
+                        },
+                        {
+                            "Time": "2020-08-05T06:40:06Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.803719,
+                                "LongitudeDegrees": -123.932707
+                            },
+                            "AltitudeMeters": 276.499602,
+                            "DistanceMeters": 10929.524669549864
+                        },
+                        {
+                            "Time": "2020-08-05T06:40:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80399,
+                                "LongitudeDegrees": -123.932712
+                            },
+                            "AltitudeMeters": 277.1846739,
+                            "DistanceMeters": 10959.694571734679
+                        },
+                        {
+                            "Time": "2020-08-05T06:40:40Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804297,
+                                "LongitudeDegrees": -123.932941
+                            },
+                            "AltitudeMeters": 278.059334,
+                            "DistanceMeters": 10998.213721589289
+                        },
+                        {
+                            "Time": "2020-08-05T06:40:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804425,
+                                "LongitudeDegrees": -123.932961
+                            },
+                            "AltitudeMeters": 278.384797,
+                            "DistanceMeters": 11012.546810845073
+                        },
+                        {
+                            "Time": "2020-08-05T06:41:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.804929,
+                                "LongitudeDegrees": -123.932745
+                            },
+                            "AltitudeMeters": 279.714416,
+                            "DistanceMeters": 11071.101881678926
+                        },
+                        {
+                            "Time": "2020-08-05T06:41:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.805082,
+                                "LongitudeDegrees": -123.932578
+                            },
+                            "AltitudeMeters": 280.200383,
+                            "DistanceMeters": 11092.503406955244
+                        },
+                        {
+                            "Time": "2020-08-05T06:41:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.805387,
+                                "LongitudeDegrees": -123.931842
+                            },
+                            "AltitudeMeters": 278.977672,
+                            "DistanceMeters": 11158.946958661727
+                        },
+                        {
+                            "Time": "2020-08-05T06:41:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.805587,
+                                "LongitudeDegrees": -123.931683
+                            },
+                            "AltitudeMeters": 278.062238,
+                            "DistanceMeters": 11184.40106267336
+                        },
+                        {
+                            "Time": "2020-08-05T06:42:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.806097,
+                                "LongitudeDegrees": -123.931379
+                            },
+                            "AltitudeMeters": 275.8512129,
+                            "DistanceMeters": 11245.879748562109
+                        },
+                        {
+                            "Time": "2020-08-05T06:42:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.806322,
+                                "LongitudeDegrees": -123.931323
+                            },
+                            "AltitudeMeters": 274.936973,
+                            "DistanceMeters": 11271.300663701795
+                        },
+                        {
+                            "Time": "2020-08-05T06:42:23Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.806471,
+                                "LongitudeDegrees": -123.931379
+                            },
+                            "AltitudeMeters": 274.3203219,
+                            "DistanceMeters": 11288.446970978684
+                        },
+                        {
+                            "Time": "2020-08-05T06:42:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.806617,
+                                "LongitudeDegrees": -123.931524
+                            },
+                            "AltitudeMeters": 273.6094069,
+                            "DistanceMeters": 11308.214318573422
+                        },
+                        {
+                            "Time": "2020-08-05T06:42:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807011,
+                                "LongitudeDegrees": -123.932151
+                            },
+                            "AltitudeMeters": 266.850564,
+                            "DistanceMeters": 11373.719132387629
+                        },
+                        {
+                            "Time": "2020-08-05T06:42:54Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807436,
+                                "LongitudeDegrees": -123.932252
+                            },
+                            "AltitudeMeters": 261.670373,
+                            "DistanceMeters": 11421.67440709903
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:04Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807803,
+                                "LongitudeDegrees": -123.93249
+                            },
+                            "AltitudeMeters": 256.827305,
+                            "DistanceMeters": 11466.508778256748
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808038,
+                                "LongitudeDegrees": -123.932804
+                            },
+                            "AltitudeMeters": 252.965622,
+                            "DistanceMeters": 11502.258057920759
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80823,
+                                "LongitudeDegrees": -123.933944
+                            },
+                            "AltitudeMeters": 243.775851,
+                            "DistanceMeters": 11593.263245628901
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:38Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808186,
+                                "LongitudeDegrees": -123.934298
+                            },
+                            "AltitudeMeters": 240.984095,
+                            "DistanceMeters": 11621.165562436881
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80807,
+                                "LongitudeDegrees": -123.934587
+                            },
+                            "AltitudeMeters": 238.394941,
+                            "DistanceMeters": 11647.042976552575
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8079449,
+                                "LongitudeDegrees": -123.934711
+                            },
+                            "AltitudeMeters": 236.702256,
+                            "DistanceMeters": 11663.969738269514
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807848,
+                                "LongitudeDegrees": -123.934759
+                            },
+                            "AltitudeMeters": 235.559406,
+                            "DistanceMeters": 11675.381481968741
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807728,
+                                "LongitudeDegrees": -123.934843
+                            },
+                            "AltitudeMeters": 234.072226,
+                            "DistanceMeters": 11690.245167394134
+                        },
+                        {
+                            "Time": "2020-08-05T06:43:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807682,
+                                "LongitudeDegrees": -123.934962
+                            },
+                            "AltitudeMeters": 233.015768,
+                            "DistanceMeters": 11700.803979749584
+                        },
+                        {
+                            "Time": "2020-08-05T06:44:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807694,
+                                "LongitudeDegrees": -123.935107
+                            },
+                            "AltitudeMeters": 231.882092,
+                            "DistanceMeters": 11712.134550619634
+                        },
+                        {
+                            "Time": "2020-08-05T06:44:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8077619,
+                                "LongitudeDegrees": -123.935199
+                            },
+                            "AltitudeMeters": 231.335888,
+                            "DistanceMeters": 11722.531459277265
+                        },
+                        {
+                            "Time": "2020-08-05T06:44:06Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.807892,
+                                "LongitudeDegrees": -123.935273
+                            },
+                            "AltitudeMeters": 230.590803,
+                            "DistanceMeters": 11738.11085389644
+                        },
+                        {
+                            "Time": "2020-08-05T06:44:20Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.80836,
+                                "LongitudeDegrees": -123.935501
+                            },
+                            "AltitudeMeters": 227.957754,
+                            "DistanceMeters": 11793.130173735599
+                        },
+                        {
+                            "Time": "2020-08-05T06:44:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.808599,
+                                "LongitudeDegrees": -123.935837
+                            },
+                            "AltitudeMeters": 226.175067,
+                            "DistanceMeters": 11830.380622692519
+                        },
+                        {
+                            "Time": "2020-08-05T06:44:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809011,
+                                "LongitudeDegrees": -123.936011
+                            },
+                            "AltitudeMeters": 223.887061,
+                            "DistanceMeters": 11878.190047732725
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809657,
+                                "LongitudeDegrees": -123.936102
+                            },
+                            "AltitudeMeters": 218.821673,
+                            "DistanceMeters": 11950.447858784342
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:20Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810237,
+                                "LongitudeDegrees": -123.936521
+                            },
+                            "AltitudeMeters": 212.235631,
+                            "DistanceMeters": 12022.736490930934
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:36Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81077,
+                                "LongitudeDegrees": -123.937034
+                            },
+                            "AltitudeMeters": 205.726154,
+                            "DistanceMeters": 12094.184739670007
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810845,
+                                "LongitudeDegrees": -123.937178
+                            },
+                            "AltitudeMeters": 204.4553819,
+                            "DistanceMeters": 12108.13277268398
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810871,
+                                "LongitudeDegrees": -123.937358
+                            },
+                            "AltitudeMeters": 202.5662989,
+                            "DistanceMeters": 12122.396158346948
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811037,
+                                "LongitudeDegrees": -123.937693
+                            },
+                            "AltitudeMeters": 197.545352,
+                            "DistanceMeters": 12154.28862860347
+                        },
+                        {
+                            "Time": "2020-08-05T06:45:57Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811131,
+                                "LongitudeDegrees": -123.938173
+                            },
+                            "AltitudeMeters": 191.454831,
+                            "DistanceMeters": 12192.974910067778
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:07Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811343,
+                                "LongitudeDegrees": -123.938716
+                            },
+                            "AltitudeMeters": 183.852104,
+                            "DistanceMeters": 12241.266554772303
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811392,
+                                "LongitudeDegrees": -123.939015
+                            },
+                            "AltitudeMeters": 180.10006,
+                            "DistanceMeters": 12265.099100213241
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:16Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811373,
+                                "LongitudeDegrees": -123.939242
+                            },
+                            "AltitudeMeters": 177.307209,
+                            "DistanceMeters": 12282.838965842904
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811373,
+                                "LongitudeDegrees": -123.939424
+                            },
+                            "AltitudeMeters": 175.083978,
+                            "DistanceMeters": 12296.960668235015
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811392,
+                                "LongitudeDegrees": -123.939595
+                            },
+                            "AltitudeMeters": 172.968746,
+                            "DistanceMeters": 12310.396380104638
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811445,
+                                "LongitudeDegrees": -123.939756
+                            },
+                            "AltitudeMeters": 170.958131,
+                            "DistanceMeters": 12324.211787816756
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:36Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811493,
+                                "LongitudeDegrees": -123.940421
+                            },
+                            "AltitudeMeters": 163.604942,
+                            "DistanceMeters": 12376.086153489166
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:46Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811691,
+                                "LongitudeDegrees": -123.940957
+                            },
+                            "AltitudeMeters": 156.932962,
+                            "DistanceMeters": 12423.154811291703
+                        },
+                        {
+                            "Time": "2020-08-05T06:46:58Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8118,
+                                "LongitudeDegrees": -123.941633
+                            },
+                            "AltitudeMeters": 149.301589,
+                            "DistanceMeters": 12476.991670605355
+                        },
+                        {
+                            "Time": "2020-08-05T06:47:07Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811793,
+                                "LongitudeDegrees": -123.942186
+                            },
+                            "AltitudeMeters": 143.454485,
+                            "DistanceMeters": 12519.906668971751
+                        },
+                        {
+                            "Time": "2020-08-05T06:47:11Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8117329,
+                                "LongitudeDegrees": -123.942379
+                            },
+                            "AltitudeMeters": 141.780406,
+                            "DistanceMeters": 12536.308298280182
+                        },
+                        {
+                            "Time": "2020-08-05T06:47:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811376,
+                                "LongitudeDegrees": -123.942959
+                            },
+                            "AltitudeMeters": 135.650722,
+                            "DistanceMeters": 12596.33934031384
+                        },
+                        {
+                            "Time": "2020-08-05T06:47:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.811167,
+                                "LongitudeDegrees": -123.943718
+                            },
+                            "AltitudeMeters": 129.185867,
+                            "DistanceMeters": 12659.660651422786
+                        },
+                        {
+                            "Time": "2020-08-05T06:47:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81087,
+                                "LongitudeDegrees": -123.944266
+                            },
+                            "AltitudeMeters": 123.686809,
+                            "DistanceMeters": 12713.522269895146
+                        },
+                        {
+                            "Time": "2020-08-05T06:48:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810013,
+                                "LongitudeDegrees": -123.944439
+                            },
+                            "AltitudeMeters": 117.421173,
+                            "DistanceMeters": 12809.862296870564
+                        },
+                        {
+                            "Time": "2020-08-05T06:48:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809613,
+                                "LongitudeDegrees": -123.944755
+                            },
+                            "AltitudeMeters": 114.128021,
+                            "DistanceMeters": 12860.694537306152
+                        },
+                        {
+                            "Time": "2020-08-05T06:48:31Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809527,
+                                "LongitudeDegrees": -123.944977
+                            },
+                            "AltitudeMeters": 112.85128,
+                            "DistanceMeters": 12880.401974417186
+                        },
+                        {
+                            "Time": "2020-08-05T06:48:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809543,
+                                "LongitudeDegrees": -123.945226
+                            },
+                            "AltitudeMeters": 111.594268,
+                            "DistanceMeters": 12899.804884641037
+                        },
+                        {
+                            "Time": "2020-08-05T06:48:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809631,
+                                "LongitudeDegrees": -123.945437
+                            },
+                            "AltitudeMeters": 110.673949,
+                            "DistanceMeters": 12918.884137061052
+                        },
+                        {
+                            "Time": "2020-08-05T06:48:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.809844,
+                                "LongitudeDegrees": -123.945809
+                            },
+                            "AltitudeMeters": 110.88155,
+                            "DistanceMeters": 12956.239121868652
+                        },
+                        {
+                            "Time": "2020-08-05T06:49:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8100949,
+                                "LongitudeDegrees": -123.946118
+                            },
+                            "AltitudeMeters": 111.086168,
+                            "DistanceMeters": 12993.048766295755
+                        },
+                        {
+                            "Time": "2020-08-05T06:49:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810275,
+                                "LongitudeDegrees": -123.946564
+                            },
+                            "AltitudeMeters": 111.308408,
+                            "DistanceMeters": 13033.04332591192
+                        },
+                        {
+                            "Time": "2020-08-05T06:49:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8102919,
+                                "LongitudeDegrees": -123.946677
+                            },
+                            "AltitudeMeters": 111.358258,
+                            "DistanceMeters": 13042.010923213198
+                        },
+                        {
+                            "Time": "2020-08-05T06:49:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.810465,
+                                "LongitudeDegrees": -123.946656
+                            },
+                            "AltitudeMeters": 111.465668,
+                            "DistanceMeters": 13061.348987873904
+                        },
+                        {
+                            "Time": "2020-08-05T06:49:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81094,
+                                "LongitudeDegrees": -123.946488
+                            },
+                            "AltitudeMeters": 111.817931,
+                            "DistanceMeters": 13115.80856291983
+                        },
+                        {
+                            "Time": "2020-08-05T06:50:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81143,
+                                "LongitudeDegrees": -123.94584
+                            },
+                            "AltitudeMeters": 115.337884,
+                            "DistanceMeters": 13189.993019544621
+                        },
+                        {
+                            "Time": "2020-08-05T06:51:40Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.812007,
+                                "LongitudeDegrees": -123.944906
+                            },
+                            "AltitudeMeters": 119.932708,
+                            "DistanceMeters": 13286.830807943661
+                        },
+                        {
+                            "Time": "2020-08-05T06:52:09Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81225,
+                                "LongitudeDegrees": -123.944363
+                            },
+                            "AltitudeMeters": 122.04364,
+                            "DistanceMeters": 13336.898898201258
+                        },
+                        {
+                            "Time": "2020-08-05T06:53:07Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.812509,
+                                "LongitudeDegrees": -123.942979
+                            },
+                            "AltitudeMeters": 125.984539,
+                            "DistanceMeters": 13448.08708783658
+                        },
+                        {
+                            "Time": "2020-08-05T06:53:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.812637,
+                                "LongitudeDegrees": -123.942779
+                            },
+                            "AltitudeMeters": 126.731243,
+                            "DistanceMeters": 13469.154541178219
+                        },
+                        {
+                            "Time": "2020-08-05T06:53:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.812784,
+                                "LongitudeDegrees": -123.942549
+                            },
+                            "AltitudeMeters": 127.589418,
+                            "DistanceMeters": 13493.367027667917
+                        },
+                        {
+                            "Time": "2020-08-05T06:53:39Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.812985,
+                                "LongitudeDegrees": -123.942456
+                            },
+                            "AltitudeMeters": 128.402525,
+                            "DistanceMeters": 13516.876874272031
+                        },
+                        {
+                            "Time": "2020-08-05T06:53:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.813255,
+                                "LongitudeDegrees": -123.942396
+                            },
+                            "AltitudeMeters": 129.141054,
+                            "DistanceMeters": 13547.291357898797
+                        },
+                        {
+                            "Time": "2020-08-05T06:54:31Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.814017,
+                                "LongitudeDegrees": -123.942401
+                            },
+                            "AltitudeMeters": 131.200807,
+                            "DistanceMeters": 13632.117204920294
+                        },
+                        {
+                            "Time": "2020-08-05T06:55:34Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.815261,
+                                "LongitudeDegrees": -123.942682
+                            },
+                            "AltitudeMeters": 135.041476,
+                            "DistanceMeters": 13772.303567120409
+                        },
+                        {
+                            "Time": "2020-08-05T06:55:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.815403,
+                                "LongitudeDegrees": -123.942752
+                            },
+                            "AltitudeMeters": 135.575349,
+                            "DistanceMeters": 13789.017816940473
+                        },
+                        {
+                            "Time": "2020-08-05T06:56:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8158079,
+                                "LongitudeDegrees": -123.9432
+                            },
+                            "AltitudeMeters": 137.393677,
+                            "DistanceMeters": 13845.93641433415
+                        },
+                        {
+                            "Time": "2020-08-05T06:56:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.816381,
+                                "LongitudeDegrees": -123.943249
+                            },
+                            "AltitudeMeters": 139.434683,
+                            "DistanceMeters": 13909.846415564929
+                        },
+                        {
+                            "Time": "2020-08-05T06:56:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.816529,
+                                "LongitudeDegrees": -123.943385
+                            },
+                            "AltitudeMeters": 140.408593,
+                            "DistanceMeters": 13929.410831903404
+                        },
+                        {
+                            "Time": "2020-08-05T06:57:28Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.816827,
+                                "LongitudeDegrees": -123.943975
+                            },
+                            "AltitudeMeters": 143.634415,
+                            "DistanceMeters": 13985.942061065658
+                        },
+                        {
+                            "Time": "2020-08-05T06:57:52Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817143,
+                                "LongitudeDegrees": -123.944202
+                            },
+                            "AltitudeMeters": 145.879213,
+                            "DistanceMeters": 14025.281240562372
+                        },
+                        {
+                            "Time": "2020-08-05T06:58:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817322,
+                                "LongitudeDegrees": -123.94416
+                            },
+                            "AltitudeMeters": 147.031351,
+                            "DistanceMeters": 14045.471988268011
+                        },
+                        {
+                            "Time": "2020-08-05T06:58:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81756,
+                                "LongitudeDegrees": -123.94398
+                            },
+                            "AltitudeMeters": 148.740325,
+                            "DistanceMeters": 14075.421063266363
+                        },
+                        {
+                            "Time": "2020-08-05T06:58:42Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817743,
+                                "LongitudeDegrees": -123.94376
+                            },
+                            "AltitudeMeters": 150.256858,
+                            "DistanceMeters": 14101.997698222809
+                        },
+                        {
+                            "Time": "2020-08-05T06:58:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.817865,
+                                "LongitudeDegrees": -123.943465
+                            },
+                            "AltitudeMeters": 151.749275,
+                            "DistanceMeters": 14128.610709300758
+                        },
+                        {
+                            "Time": "2020-08-05T06:59:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.818059,
+                                "LongitudeDegrees": -123.942666
+                            },
+                            "AltitudeMeters": 155.361422,
+                            "DistanceMeters": 14194.253332330123
+                        },
+                        {
+                            "Time": "2020-08-05T07:00:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81824,
+                                "LongitudeDegrees": -123.942344
+                            },
+                            "AltitudeMeters": 157.127492,
+                            "DistanceMeters": 14226.347668456845
+                        },
+                        {
+                            "Time": "2020-08-05T07:00:22Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.81847,
+                                "LongitudeDegrees": -123.942143
+                            },
+                            "AltitudeMeters": 158.777126,
+                            "DistanceMeters": 14256.326048664614
+                        },
+                        {
+                            "Time": "2020-08-05T07:00:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.818807,
+                                "LongitudeDegrees": -123.942105
+                            },
+                            "AltitudeMeters": 160.847815,
+                            "DistanceMeters": 14293.956160623638
+                        },
+                        {
+                            "Time": "2020-08-05T07:01:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.819386,
+                                "LongitudeDegrees": -123.942314
+                            },
+                            "AltitudeMeters": 162.955579,
+                            "DistanceMeters": 14360.417997689206
+                        },
+                        {
+                            "Time": "2020-08-05T07:01:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8195989,
+                                "LongitudeDegrees": -123.94233
+                            },
+                            "AltitudeMeters": 163.43453,
+                            "DistanceMeters": 14384.150264038828
+                        },
+                        {
+                            "Time": "2020-08-05T07:01:46Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.819932,
+                                "LongitudeDegrees": -123.942293
+                            },
+                            "AltitudeMeters": 164.184528,
+                            "DistanceMeters": 14421.341509582477
+                        },
+                        {
+                            "Time": "2020-08-05T07:02:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.820422,
+                                "LongitudeDegrees": -123.941805
+                            },
+                            "AltitudeMeters": 165.523889,
+                            "DistanceMeters": 14487.738650176783
+                        },
+                        {
+                            "Time": "2020-08-05T07:02:24Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.820706,
+                                "LongitudeDegrees": -123.941676
+                            },
+                            "AltitudeMeters": 166.030488,
+                            "DistanceMeters": 14520.899375269353
+                        },
+                        {
+                            "Time": "2020-08-05T07:02:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.821416,
+                                "LongitudeDegrees": -123.941598
+                            },
+                            "AltitudeMeters": 164.899101,
+                            "DistanceMeters": 14600.167056160422
+                        },
+                        {
+                            "Time": "2020-08-05T07:02:52Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.821536,
+                                "LongitudeDegrees": -123.941585
+                            },
+                            "AltitudeMeters": 164.707896,
+                            "DistanceMeters": 14613.563333262135
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.821917,
+                                "LongitudeDegrees": -123.941762
+                            },
+                            "AltitudeMeters": 164.071608,
+                            "DistanceMeters": 14658.143194661085
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:15Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8221599,
+                                "LongitudeDegrees": -123.942073
+                            },
+                            "AltitudeMeters": 163.554261,
+                            "DistanceMeters": 14694.381440047167
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822325,
+                                "LongitudeDegrees": -123.942459
+                            },
+                            "AltitudeMeters": 162.908566,
+                            "DistanceMeters": 14729.516264544802
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822479,
+                                "LongitudeDegrees": -123.94273
+                            },
+                            "AltitudeMeters": 162.222781,
+                            "DistanceMeters": 14756.643024966746
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:41Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822691,
+                                "LongitudeDegrees": -123.942921
+                            },
+                            "AltitudeMeters": 161.5183209,
+                            "DistanceMeters": 14784.508518020413
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822878,
+                                "LongitudeDegrees": -123.942985
+                            },
+                            "AltitudeMeters": 160.9773,
+                            "DistanceMeters": 14805.909023359372
+                        },
+                        {
+                            "Time": "2020-08-05T07:03:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823132,
+                                "LongitudeDegrees": -123.942904
+                            },
+                            "AltitudeMeters": 160.245049,
+                            "DistanceMeters": 14834.873808166243
+                        },
+                        {
+                            "Time": "2020-08-05T07:04:07Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823487,
+                                "LongitudeDegrees": -123.942636
+                            },
+                            "AltitudeMeters": 159.11618,
+                            "DistanceMeters": 14879.527107742164
+                        },
+                        {
+                            "Time": "2020-08-05T07:04:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8236739,
+                                "LongitudeDegrees": -123.942593
+                            },
+                            "AltitudeMeters": 158.5832069,
+                            "DistanceMeters": 14900.598308377372
+                        },
+                        {
+                            "Time": "2020-08-05T07:04:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823835,
+                                "LongitudeDegrees": -123.942684
+                            },
+                            "AltitudeMeters": 158.08004,
+                            "DistanceMeters": 14919.87115595507
+                        },
+                        {
+                            "Time": "2020-08-05T07:04:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823928,
+                                "LongitudeDegrees": -123.942963
+                            },
+                            "AltitudeMeters": 157.353633,
+                            "DistanceMeters": 14943.862973977659
+                        },
+                        {
+                            "Time": "2020-08-05T07:04:34Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823943,
+                                "LongitudeDegrees": -123.943323
+                            },
+                            "AltitudeMeters": 156.506577,
+                            "DistanceMeters": 14971.839585431591
+                        },
+                        {
+                            "Time": "2020-08-05T07:05:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823753,
+                                "LongitudeDegrees": -123.945388
+                            },
+                            "AltitudeMeters": 151.880491,
+                            "DistanceMeters": 15133.420959884112
+                        },
+                        {
+                            "Time": "2020-08-05T07:06:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823476,
+                                "LongitudeDegrees": -123.947405
+                            },
+                            "AltitudeMeters": 149.613857,
+                            "DistanceMeters": 15292.898591317176
+                        },
+                        {
+                            "Time": "2020-08-05T07:06:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823487,
+                                "LongitudeDegrees": -123.947668
+                            },
+                            "AltitudeMeters": 149.323361,
+                            "DistanceMeters": 15313.337503680266
+                        },
+                        {
+                            "Time": "2020-08-05T07:06:19Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823566,
+                                "LongitudeDegrees": -123.947856
+                            },
+                            "AltitudeMeters": 149.151864,
+                            "DistanceMeters": 15330.367854261798
+                        },
+                        {
+                            "Time": "2020-08-05T07:06:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823723,
+                                "LongitudeDegrees": -123.947958
+                            },
+                            "AltitudeMeters": 148.98102,
+                            "DistanceMeters": 15349.552668125692
+                        },
+                        {
+                            "Time": "2020-08-05T07:06:52Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824414,
+                                "LongitudeDegrees": -123.947985
+                            },
+                            "AltitudeMeters": 148.29577,
+                            "DistanceMeters": 15426.502500455254
+                        },
+                        {
+                            "Time": "2020-08-05T07:07:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824713,
+                                "LongitudeDegrees": -123.948129
+                            },
+                            "AltitudeMeters": 147.983121,
+                            "DistanceMeters": 15461.611310417595
+                        },
+                        {
+                            "Time": "2020-08-05T07:07:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8250389,
+                                "LongitudeDegrees": -123.948542
+                            },
+                            "AltitudeMeters": 147.552037,
+                            "DistanceMeters": 15510.011331131715
+                        },
+                        {
+                            "Time": "2020-08-05T07:07:23Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825187,
+                                "LongitudeDegrees": -123.948678
+                            },
+                            "AltitudeMeters": 146.746636,
+                            "DistanceMeters": 15529.584238177413
+                        },
+                        {
+                            "Time": "2020-08-05T07:07:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825469,
+                                "LongitudeDegrees": -123.948985
+                            },
+                            "AltitudeMeters": 144.371271,
+                            "DistanceMeters": 15568.987187812512
+                        },
+                        {
+                            "Time": "2020-08-05T07:07:43Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825664,
+                                "LongitudeDegrees": -123.94937
+                            },
+                            "AltitudeMeters": 142.145549,
+                            "DistanceMeters": 15605.907814816288
+                        },
+                        {
+                            "Time": "2020-08-05T07:07:56Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8258719,
+                                "LongitudeDegrees": -123.950035
+                            },
+                            "AltitudeMeters": 138.736891,
+                            "DistanceMeters": 15662.446642219398
+                        },
+                        {
+                            "Time": "2020-08-05T07:08:09Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826202,
+                                "LongitudeDegrees": -123.950544
+                            },
+                            "AltitudeMeters": 135.485775,
+                            "DistanceMeters": 15716.384251579972
+                        },
+                        {
+                            "Time": "2020-08-05T07:08:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82637,
+                                "LongitudeDegrees": -123.951525
+                            },
+                            "AltitudeMeters": 128.195913,
+                            "DistanceMeters": 15794.745746541425
+                        },
+                        {
+                            "Time": "2020-08-05T07:08:29Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826334,
+                                "LongitudeDegrees": -123.951617
+                            },
+                            "AltitudeMeters": 127.430538,
+                            "DistanceMeters": 15802.930478799088
+                        },
+                        {
+                            "Time": "2020-08-05T07:08:33Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826177,
+                                "LongitudeDegrees": -123.95169
+                            },
+                            "AltitudeMeters": 125.712571,
+                            "DistanceMeters": 15821.302021676162
+                        },
+                        {
+                            "Time": "2020-08-05T07:08:53Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825417,
+                                "LongitudeDegrees": -123.951517
+                            },
+                            "AltitudeMeters": 117.702288,
+                            "DistanceMeters": 15906.962086063655
+                        },
+                        {
+                            "Time": "2020-08-05T07:08:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825184,
+                                "LongitudeDegrees": -123.951535
+                            },
+                            "AltitudeMeters": 115.12595,
+                            "DistanceMeters": 15932.936933891226
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825096,
+                                "LongitudeDegrees": -123.951605
+                            },
+                            "AltitudeMeters": 113.969906,
+                            "DistanceMeters": 15944.137315232978
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825048,
+                                "LongitudeDegrees": -123.951706
+                            },
+                            "AltitudeMeters": 112.991075,
+                            "DistanceMeters": 15953.620755498972
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825029,
+                                "LongitudeDegrees": -123.951957
+                            },
+                            "AltitudeMeters": 110.969584,
+                            "DistanceMeters": 15973.206050789342
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82514,
+                                "LongitudeDegrees": -123.952668
+                            },
+                            "AltitudeMeters": 105.135748,
+                            "DistanceMeters": 16029.72739614439
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:26Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825113,
+                                "LongitudeDegrees": -123.952953
+                            },
+                            "AltitudeMeters": 102.832865,
+                            "DistanceMeters": 16052.038960453532
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:49Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824604,
+                                "LongitudeDegrees": -123.954041
+                            },
+                            "AltitudeMeters": 92.5458139,
+                            "DistanceMeters": 16153.694070983853
+                        },
+                        {
+                            "Time": "2020-08-05T07:09:56Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824526,
+                                "LongitudeDegrees": -123.954422
+                            },
+                            "AltitudeMeters": 89.543329,
+                            "DistanceMeters": 16184.498576539596
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824622,
+                                "LongitudeDegrees": -123.95482
+                            },
+                            "AltitudeMeters": 86.35888,
+                            "DistanceMeters": 16217.169972689571
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:05Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824632,
+                                "LongitudeDegrees": -123.95495
+                            },
+                            "AltitudeMeters": 85.36998,
+                            "DistanceMeters": 16227.315756336442
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824585,
+                                "LongitudeDegrees": -123.955086
+                            },
+                            "AltitudeMeters": 84.222179,
+                            "DistanceMeters": 16239.091816943223
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.82441,
+                                "LongitudeDegrees": -123.955213
+                            },
+                            "AltitudeMeters": 82.094405,
+                            "DistanceMeters": 16260.92207327897
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:18Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8241919,
+                                "LongitudeDegrees": -123.955231
+                            },
+                            "AltitudeMeters": 79.725163,
+                            "DistanceMeters": 16285.240833444894
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:21Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824111,
+                                "LongitudeDegrees": -123.955308
+                            },
+                            "AltitudeMeters": 78.670954,
+                            "DistanceMeters": 16296.047386956687
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823479,
+                                "LongitudeDegrees": -123.956381
+                            },
+                            "AltitudeMeters": 71.633331,
+                            "DistanceMeters": 16405.033996722104
+                        },
+                        {
+                            "Time": "2020-08-05T07:10:56Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823224,
+                                "LongitudeDegrees": -123.956609
+                            },
+                            "AltitudeMeters": 69.754246,
+                            "DistanceMeters": 16438.479721505377
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823059,
+                                "LongitudeDegrees": -123.956729
+                            },
+                            "AltitudeMeters": 68.597327,
+                            "DistanceMeters": 16459.071646961213
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:09Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822944,
+                                "LongitudeDegrees": -123.95706
+                            },
+                            "AltitudeMeters": 66.985333,
+                            "DistanceMeters": 16487.763412066965
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:20Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.822933,
+                                "LongitudeDegrees": -123.957584
+                            },
+                            "AltitudeMeters": 64.765307,
+                            "DistanceMeters": 16528.43149557096
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:27Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823003,
+                                "LongitudeDegrees": -123.957914
+                            },
+                            "AltitudeMeters": 63.435136,
+                            "DistanceMeters": 16555.191126570015
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:31Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823126,
+                                "LongitudeDegrees": -123.958037
+                            },
+                            "AltitudeMeters": 62.605558,
+                            "DistanceMeters": 16571.880119323057
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823164,
+                                "LongitudeDegrees": -123.958075
+                            },
+                            "AltitudeMeters": 62.349265,
+                            "DistanceMeters": 16577.0360658662
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:45Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823516,
+                                "LongitudeDegrees": -123.958416
+                            },
+                            "AltitudeMeters": 59.999185,
+                            "DistanceMeters": 16624.313661992102
+                        },
+                        {
+                            "Time": "2020-08-05T07:11:54Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.823833,
+                                "LongitudeDegrees": -123.958505
+                            },
+                            "AltitudeMeters": 58.211824,
+                            "DistanceMeters": 16660.270793936386
+                        },
+                        {
+                            "Time": "2020-08-05T07:12:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824024,
+                                "LongitudeDegrees": -123.958716
+                            },
+                            "AltitudeMeters": 56.878029,
+                            "DistanceMeters": 16687.103338389315
+                        },
+                        {
+                            "Time": "2020-08-05T07:12:03Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824076,
+                                "LongitudeDegrees": -123.958844
+                            },
+                            "AltitudeMeters": 56.306704,
+                            "DistanceMeters": 16698.596916948103
+                        },
+                        {
+                            "Time": "2020-08-05T07:12:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8240849,
+                                "LongitudeDegrees": -123.959555
+                            },
+                            "AltitudeMeters": 55.147497,
+                            "DistanceMeters": 16753.760975489313
+                        },
+                        {
+                            "Time": "2020-08-05T07:12:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824357,
+                                "LongitudeDegrees": -123.960318
+                            },
+                            "AltitudeMeters": 54.839248,
+                            "DistanceMeters": 16820.250049789174
+                        },
+                        {
+                            "Time": "2020-08-05T07:12:56Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.824546,
+                                "LongitudeDegrees": -123.96097
+                            },
+                            "AltitudeMeters": 54.585267,
+                            "DistanceMeters": 16875.029425198063
+                        },
+                        {
+                            "Time": "2020-08-05T07:13:32Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8253,
+                                "LongitudeDegrees": -123.961104
+                            },
+                            "AltitudeMeters": 55.81886,
+                            "DistanceMeters": 16959.605049529866
+                        },
+                        {
+                            "Time": "2020-08-05T07:13:44Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.825444,
+                                "LongitudeDegrees": -123.961128
+                            },
+                            "AltitudeMeters": 56.388076,
+                            "DistanceMeters": 16975.74271316676
+                        },
+                        {
+                            "Time": "2020-08-05T07:14:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.826067,
+                                "LongitudeDegrees": -123.961079
+                            },
+                            "AltitudeMeters": 58.837953,
+                            "DistanceMeters": 17045.198438250874
+                        },
+                        {
+                            "Time": "2020-08-05T07:14:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8262,
+                                "LongitudeDegrees": -123.961005
+                            },
+                            "AltitudeMeters": 59.398054,
+                            "DistanceMeters": 17061.077693547108
+                        },
+                        {
+                            "Time": "2020-08-05T07:14:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8263729,
+                                "LongitudeDegrees": -123.960902
+                            },
+                            "AltitudeMeters": 60.133478,
+                            "DistanceMeters": 17081.917204038404
+                        },
+                        {
+                            "Time": "2020-08-05T07:14:55Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827384,
+                                "LongitudeDegrees": -123.959805
+                            },
+                            "AltitudeMeters": 56.3967,
+                            "DistanceMeters": 17223.018519883266
+                        },
+                        {
+                            "Time": "2020-08-05T07:14:59Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.827643,
+                                "LongitudeDegrees": -123.959626
+                            },
+                            "AltitudeMeters": 54.842454,
+                            "DistanceMeters": 17255.019309647232
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.828294,
+                                "LongitudeDegrees": -123.95947
+                            },
+                            "AltitudeMeters": 51.068785,
+                            "DistanceMeters": 17328.49121261137
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:15Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8287509,
+                                "LongitudeDegrees": -123.95957
+                            },
+                            "AltitudeMeters": 47.418718,
+                            "DistanceMeters": 17379.940878344318
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:17Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.8289169,
+                                "LongitudeDegrees": -123.959679
+                            },
+                            "AltitudeMeters": 45.977343,
+                            "DistanceMeters": 17400.262179954378
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:25Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.829325,
+                                "LongitudeDegrees": -123.960062
+                            },
+                            "AltitudeMeters": 42.1279169,
+                            "DistanceMeters": 17454.542838397832
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:30Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.829631,
+                                "LongitudeDegrees": -123.960324
+                            },
+                            "AltitudeMeters": 39.314494,
+                            "DistanceMeters": 17494.208036249973
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:36Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.830021,
+                                "LongitudeDegrees": -123.960481
+                            },
+                            "AltitudeMeters": 37.420147,
+                            "DistanceMeters": 17539.29801627695
+                        },
+                        {
+                            "Time": "2020-08-05T07:15:47Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.830619,
+                                "LongitudeDegrees": -123.96055
+                            },
+                            "AltitudeMeters": 37.089194,
+                            "DistanceMeters": 17606.08148543634
+                        },
+                        {
+                            "Time": "2020-08-05T07:16:14Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.831545,
+                                "LongitudeDegrees": -123.960487
+                            },
+                            "AltitudeMeters": 36.57779,
+                            "DistanceMeters": 17709.27849405623
+                        },
+                        {
+                            "Time": "2020-08-05T07:16:48Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.832365,
+                                "LongitudeDegrees": -123.960174
+                            },
+                            "AltitudeMeters": 39.999276,
+                            "DistanceMeters": 17803.733183823188
+                        },
+                        {
+                            "Time": "2020-08-05T07:17:08Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.832785,
+                                "LongitudeDegrees": -123.960182
+                            },
+                            "AltitudeMeters": 41.9332939,
+                            "DistanceMeters": 17850.491216040984
+                        },
+                        {
+                            "Time": "2020-08-05T07:18:00Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.833748,
+                                "LongitudeDegrees": -123.960381
+                            },
+                            "AltitudeMeters": 46.7100549,
+                            "DistanceMeters": 17958.79670965893
+                        },
+                        {
+                            "Time": "2020-08-05T07:18:20Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.834127,
+                                "LongitudeDegrees": -123.960377
+                            },
+                            "AltitudeMeters": 48.777992,
+                            "DistanceMeters": 18000.98769257993
+                        },
+                        {
+                            "Time": "2020-08-05T07:18:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.834681,
+                                "LongitudeDegrees": -123.960151
+                            },
+                            "AltitudeMeters": 51.920424,
+                            "DistanceMeters": 18065.10099645282
+                        },
+                        {
+                            "Time": "2020-08-05T07:19:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.835994,
+                                "LongitudeDegrees": -123.9591
+                            },
+                            "AltitudeMeters": 57.029372,
+                            "DistanceMeters": 18232.456112156404
+                        },
+                        {
+                            "Time": "2020-08-05T07:20:01Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.836324,
+                                "LongitudeDegrees": -123.958897
+                            },
+                            "AltitudeMeters": 57.886787,
+                            "DistanceMeters": 18272.423018094854
+                        },
+                        {
+                            "Time": "2020-08-05T07:20:12Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.836732,
+                                "LongitudeDegrees": -123.958764
+                            },
+                            "AltitudeMeters": 58.88596,
+                            "DistanceMeters": 18318.997720602245
+                        },
+                        {
+                            "Time": "2020-08-05T07:20:37Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.837808,
+                                "LongitudeDegrees": -123.958671
+                            },
+                            "AltitudeMeters": 58.384261,
+                            "DistanceMeters": 18438.993762535665
+                        },
+                        {
+                            "Time": "2020-08-05T07:20:46Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.838234,
+                                "LongitudeDegrees": -123.958561
+                            },
+                            "AltitudeMeters": 58.167927,
+                            "DistanceMeters": 18487.17682911197
+                        },
+                        {
+                            "Time": "2020-08-05T07:20:51Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.838527,
+                                "LongitudeDegrees": -123.958416
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18521.67739219065
+                        },
+                        {
+                            "Time": "2020-08-05T07:21:02Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.839097,
+                                "LongitudeDegrees": -123.958083
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18590.18338507924
+                        },
+                        {
+                            "Time": "2020-08-05T07:21:10Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.839526,
+                                "LongitudeDegrees": -123.957876
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18640.565205428407
+                        },
+                        {
+                            "Time": "2020-08-05T07:21:13Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.839653,
+                                "LongitudeDegrees": -123.957861
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18654.7504778416
+                        },
+                        {
+                            "Time": "2020-08-05T07:21:15Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.839765,
+                                "LongitudeDegrees": -123.957856
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18667.224216960218
+                        },
+                        {
+                            "Time": "2020-08-05T07:21:20Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.840025,
+                                "LongitudeDegrees": -123.957891
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18696.29411516295
+                        },
+                        {
+                            "Time": "2020-08-05T07:21:20Z",
+                            "Position": {
+                                "LatitudeDegrees": 45.840026,
+                                "LongitudeDegrees": -123.957891
+                            },
+                            "AltitudeMeters": 58.017642,
+                            "DistanceMeters": 18696.405434007702
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
