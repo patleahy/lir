@@ -1,6 +1,6 @@
 # Lir
 
-> A language for describing the conversion of data in one schema into another.
+*A language for describing the conversion of data in one schema into another.*
 
 CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu 
 
@@ -11,23 +11,24 @@ CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu
 ### Part 1. Your language
 
 *Summarize key objects, types, and operators of your language:*
-* *select those constructs that are important for presenting your design*
-* *illustrate features with example programs in your language*
-* *highlight those constructs that make your language a better solution to the problem than a classical library of procedures or classes*
+* select those constructs that are important for presenting your design
+* illustrate features with example programs in your language
+* highlight those constructs that make your language a better solution to the problem than a classical library of procedures or classes
 
 ### Part 2. Your implementation
 
 *Describe the chosen implementation.  Answer at least these questions:*
-* *Will your language be embedded (if yes, shallow or deep) or external, or will it be a combination of the above designs?*
-* *Show the diagram of your system architecture, indicating key components, and the type of data that will be read and produced by these components.*
-* *The components could be a parser, analyzer, code generator, etc.*
-  * *The data could be an AST, a CFG, or other IR, etc.*
-  * *Will your system use an optimizer?*
-* *Will you analyze the code to find some errors?*
-* *What is your implementation language?*
-* *How will you test the implementation of your language?*
-* *What compiler construction tools (such as ANTLR) will you use?*
-* *Answer other questions as necessary.  For example, you may need to answer what is your compiler’s target language or API.*
+
+* Will your language be embedded (if yes, shallow or deep) or external, or will it be a combination of the above designs?
+* Show the diagram of your system architecture, indicating key components, and the type of data that will be read and produced by these components.
+* The components could be a parser, analyzer, code generator, etc.
+  * The data could be an AST, a CFG, or other IR, etc.
+  * Will your system use an optimizer?
+* Will you analyze the code to find some errors?
+* What is your implementation language?
+* How will you test the implementation of your language?
+* What compiler construction tools (such as ANTLR) will you use?
+* Answer other questions as necessary.  For example, you may need to answer what is your compiler’s target language or API.
 
 *Add a figure of **your implementation architecture** and refer to it from your answers.*
 
