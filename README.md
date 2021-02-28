@@ -11,6 +11,7 @@ CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu
 ### Part 1. Your language
 
 *Summarize key objects, types, and operators of your language:*
+
 * select those constructs that are important for presenting your design
 * illustrate features with example programs in your language
 * highlight those constructs that make your language a better solution to the problem than a classical library of procedures or classes
