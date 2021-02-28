@@ -4,6 +4,9 @@
 
 CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu 
 
+* HW5.3 Specification: https://docs.google.com/document/d/1tCTTs3S26qWGabqUhrtquPn9vYZ-NTc3pHqQ6oVPg6U/edit
+* HW5.2 Pre-Proposal: https://docs.google.com/document/d/1CjqzdFDgl1bzQAXJ8aX-fIM69zMkuVQhIi-Fin2XjL4/edit#
+
 ---
 
 ## The Design Document
