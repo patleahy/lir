@@ -27,4 +27,21 @@ describe("Lir", () => {
 
         expect(output.character.lastName).to.be.equal("Palmer");
     });
+
+    it("array of properties mapping", () => {
+        var source = {
+            people: [
+                { name : { first: "Andy", last: "Palmer" } },
+                { name : { first: "Dag", last: "Bellinghausen" } },
+                { name : { first: "Claire", last: "Baxter" } },
+            ]
+        };
+
+        var lir = Lir.from("people.name.first").to("character[].firstName");
+        var output = lir.map(source);
+
+        expect(output.character[0].firstName).to.be.equal("Andy");
+        expect(output.character[1].firstName).to.be.equal("Dag");
+        expect(output.character[2].firstName).to.be.equal("Claire");
+    });
 });

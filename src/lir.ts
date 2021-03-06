@@ -28,20 +28,56 @@ class LirTo {
 
     public map(source: any): any {
 
-        var sourceProperty: any = source;
-        for (var i = 0; i < this.pathFrom.length; i++) {
-            sourceProperty = sourceProperty[this.pathFrom[i]];
+        var values = this.walk(source, this.pathFrom);
+        var output = {};
+        this.construct(output, this.pathTo, values);
+        return output;
+    }
+
+    private walk(obj: any, path: string[]): any {
+        var value = obj[path[0]];
+        if (path.length == 1) {
+            return value;
         }
         
-        var output: any = {};
-        var outputProperty: any = output;
-        for(var i = 0; i < this.pathTo.length - 1; i++) {
-            var newProperty: any = {};
-            outputProperty[this.pathTo[i]] = newProperty;
-            outputProperty = newProperty;
-        }
-        outputProperty[this.pathTo[this.pathTo.length-1]] = sourceProperty;
+        var innerPath = path.slice(1);
 
-        return output;
+        if (Array.isArray(value)) {
+            var values = [];
+
+            for (var i = 0; i < value.length; i++) {
+                values.push(this.walk(value[i], innerPath));
+            }
+            return values;
+        }
+
+        return this.walk(value, innerPath);
+    }
+
+    private construct(obj: any, path: string[], value: any) {
+        var property = path[0];
+        var isArray = property.endsWith('[]');
+        if (isArray) {
+            property = property.slice(0, property.length-2);
+        }
+
+        if (path.length == 1) {
+            obj[property] = value;
+        } else {
+            var innerPath = path.slice(1);
+            if (isArray) {
+                var newArray = [];
+                for (var i = 0; i < value.length; i++) {
+                    var newObject = {};
+                    this.construct(newObject, innerPath, value[i]);
+                    newArray.push(newObject);
+                }
+                obj[property] = newArray;
+            } else {
+                var newObj = {};
+                obj[property] = newObj;
+                this.construct(newObj, innerPath, value);
+            }
+        }
     }
 }
