@@ -6,7 +6,8 @@ describe("Lir", () => {
     it("single shallow property mapping", () => {
         var source = { name: "Andy" };
         
-        var lir = Lir.from("name").to("title");
+        var lir = Lir();
+        lir.from("name").to("title");
         var output = lir.map(source);
 
         expect(output.title).to.be.equal("Andy");
@@ -22,7 +23,8 @@ describe("Lir", () => {
             }
         };
         
-        var lir = Lir.from("person.name.last").to('character.lastName');
+        var lir = Lir();
+        lir.from("person.name.last").to('character.lastName');
         var output = lir.map(source);
 
         expect(output.character.lastName).to.be.equal("Palmer");
@@ -37,11 +39,31 @@ describe("Lir", () => {
             ]
         };
 
-        var lir = Lir.from("people.name.first").to("character[].firstName");
+        var lir = Lir()
+        lir.from("people.name.first").to("character[].firstName");
         var output = lir.map(source);
 
         expect(output.character[0].firstName).to.be.equal("Andy");
         expect(output.character[1].firstName).to.be.equal("Dag");
         expect(output.character[2].firstName).to.be.equal("Claire");
+    });
+
+    it("two properties property mapping", () => {
+        var source = {
+            person: {
+                name: {
+                    first: "Andy",
+                    last: "Palmer"
+                }
+            }
+        };
+
+        var lir = Lir();
+        lir.from("person.name.first").to('character.firstName');
+        lir.from("person.name.last").to('character.lastName');
+
+        var output = lir.map(source);
+        expect(output.character.firstName).to.be.equal("Andy");
+        expect(output.character.lastName).to.be.equal("Palmer");
     });
 });
