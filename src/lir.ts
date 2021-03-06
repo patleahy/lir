@@ -41,8 +41,8 @@ class LirTo {
     private pathTo: string[];
 
     public constructor(pathFrom: string, pathTo: string) {
-        this.pathFrom = (pathFrom || "").length > 0 ? pathFrom.split('.') : [];
-        this.pathTo = (pathTo || "").length > 0 ? pathTo.split('.') : [];
+        this.pathFrom = (pathFrom || '').length > 0 ? pathFrom.split('.') : [];
+        this.pathTo = (pathTo || '').length > 0 ? pathTo.split('.') : [];
     }
 
     /** @internal */
