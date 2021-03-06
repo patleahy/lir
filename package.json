@@ -1,0 +1,29 @@
+{
+  "name": "lir",
+  "version": "0.1.0",
+  "description": "A language for describing the conversion of data in one schema into another.",
+  "directories": {
+    "doc": "docs",
+    "test": "test",
+    "build": "build"
+  },
+  "scripts": {
+    "pretest": "tsc",
+    "test": "mocha --require source-map-support/register ./dist/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/patleahy/lir.git"
+  },
+  "author": "Pat Leahy (pat@patleahy.com)",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/patleahy/lir#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "chai": "^4.3.3",
+    "mocha": "^8.3.1",
+    "source-map-support": "^0.5.19",
+    "typescript": "^4.2.3"
+  }
+}

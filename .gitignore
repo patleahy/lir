@@ -1,2 +1,10 @@
+# NPM Output
+node_modules/
+package-lock.json
 
+# Built Code
+dist/
+
+# VS Code files.
 .vscode/
+*.code-workspace
