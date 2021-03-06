@@ -4,66 +4,97 @@ import { Lir } from '../src/lir';
 describe('Lir', () => {
 
     it('single shallow property mapping', () => {
-        var source = { name: 'Andy' };
+        var source = { name: 'My Blog' };
         
         var lir = Lir();
         lir.from('name').to('title');
         var output = lir.map(source);
 
-        expect(output.title).to.be.equal('Andy');
+        expect(output.title).to.be.equal('My Blog');
     });
 
     it('single deeper property mapping', () => {
         var source = {
-            person: {
-                name: {
-                    first: 'Andy',
-                    last: 'Palmer'
+            rss: {
+                channel: {
+                    title: 'My Blog',
                 }
             }
         };
         
         var lir = Lir();
-        lir.from('person.name.last').to('character.lastName');
+        lir.from('rss.channel.title').to('feed.title.#text');
         var output = lir.map(source);
 
-        expect(output.character.lastName).to.be.equal('Palmer');
+        expect(output.feed.title['#text']).to.be.equal('My Blog');
     });
 
     it('array of properties mapping', () => {
         var source = {
-            people: [
-                { name : { first: 'Andy', last: 'Palmer' } },
-                { name : { first: 'Dag', last: 'Bellinghausen' } },
-                { name : { first: 'Claire', last: 'Baxter' } },
-            ]
+            gpx: {
+                trk: { 
+                    trkseg: {
+                        trkpt: [
+                            { lat: 45.839295, lon: -123.959679 },
+                            { lat: 45.838555, lon: -123.959732 },
+                            { lat: 45.838526, lon: -123.958723 }
+                        ]
+                    }
+                }
+            }
         };
 
         var lir = Lir()
-        lir.from('people.name.first').to('character[].firstName');
+        lir.from('gpx.trk.trkseg.trkpt')
+           .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
         var output = lir.map(source);
 
-        expect(output.character[0].firstName).to.be.equal('Andy');
-        expect(output.character[1].firstName).to.be.equal('Dag');
-        expect(output.character[2].firstName).to.be.equal('Claire');
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lat).to.be.equal(45.839295);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lat).to.be.equal(45.838555);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lat).to.be.equal(45.838526);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lon).to.be.equal(-123.959679);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lon).to.be.equal(-123.959732);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lon).to.be.equal(-123.958723);
     });
 
     it('two properties property mapping', () => {
         var source = {
-            person: {
-                name: {
-                    first: 'Andy',
-                    last: 'Palmer'
+            rss: {
+                channel: {
+                    title: 'My Blog',
+                    description: "The very interesting things I do."
                 }
             }
         };
 
         var lir = Lir();
-        lir.from('person.name.first').to('character.firstName');
-        lir.from('person.name.last').to('character.lastName');
-
+        lir.from('rss.channel.title').to('feed.title.text');
+        lir.from('rss.channel.description').to('feed.subtitle.text');
         var output = lir.map(source);
-        expect(output.character.firstName).to.be.equal('Andy');
-        expect(output.character.lastName).to.be.equal('Palmer');
+
+        expect(output.feed.title.text).to.be.equal('My Blog');
+        expect(output.feed.subtitle.text).to.be.equal('The very interesting things I do.');
     });
+
+    it('two properties at different depths', () => {
+        var source = {
+            rss: {
+                channel: {
+                    title: 'My Blog',
+                    link: {
+                        href: 'http://myspace.com/pat',
+                    }
+                }
+            }
+        };
+
+        var lir = Lir();
+        lir.from('rss.channel.title').to('feed.title.text');
+        lir.from('rss.channel.link.href').to('feed.link.link.href');
+        var output = lir.map(source);
+
+        expect(output.feed.title.text).to.be.equal('My Blog');
+        expect(output.feed.link.link.href).to.be.equal('http://myspace.com/pat');
+    });
+
 });
