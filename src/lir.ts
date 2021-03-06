@@ -45,6 +45,7 @@ class LirTo {
         this.pathTo = (pathTo || "").length > 0 ? pathTo.split('.') : [];
     }
 
+    /** @internal */
     public map(source: any, output: any): any {
         var values = this.walk(source, this.pathFrom);
         this.apply(this.pathTo, values, output);
