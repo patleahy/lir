@@ -34,7 +34,7 @@ If the mapping rule doesn't have *child mapping rule* then the input object's pr
 
 #### Example
 
-[TCX (Training Center XML)](https://en.wikipedia.org/wiki/Training_Center_XML) and [GPX (GPS Exchange Format)](https://www.topografix.com/gpx.asp) are two file formats for saving data from GPS devices such as cycle computers and running watches. Here is a simplified example of the same bike ride deserialized into TypeScript from both a TCX and GPX file. To see how the TypeScript literals were generated from XML files, see [the examples directory](examples/README.md).
+[TCX (Training Center XML)](https://en.wikipedia.org/wiki/Training_Center_XML) and [GPX (GPS Exchange Format)](https://www.topografix.com/gpx.asp) are two file formats for saving data from GPS devices such as cycle computers and running watches. Here is a simplified example of the same bike ride deserialized into TypeScript from both a TCX and GPX file. To see how the TypeScript literals were generated from XML files, see [the examples directory](docs/examples/README.md).
 
 *GPX Example:*
 ```ts
@@ -178,7 +178,7 @@ As a shallow embedding the only tools I will use are typical tools for implement
 
 This diagram shows how the Lir system is intended to operate. Creating the input data model and using the output data model are outside the scope of the Lir system. The *Lir Program* is the code which declares the mapping rules. 
 
-![Lir System](img/lirsystem.jpg)
+![Lir System](docs/img/lirsystem.jpg)
 
 This code example shows how these components appear in code:
 
@@ -223,7 +223,7 @@ Operating on in-memory representation requires the programmer to write additiona
 
 > Describe your implementation plan.  Design your implementation steps such that each step adds more features from your language, so that when you run out of time, you will have some subset of your language running.  Ideally, you will be able to execute some simple programs from your language already after the first step.
 
-I intend to build Lir to support mapping between two pairs of in-memory representations of well known XML file types. I want to be able to transform a deserialized RSS file into the same data model as could represent an Atom file. Secondly I want to be able to transform a TCX (Training Center XML) model to a GPX (GPS Exchange Format) model. Both pairs of file types provide real world examples, and both have structures small enough that I can create Lir language to implement the mappings. Examples of these file types along with their structure when loaded into TYpeScript are shown in [the examples directory](examples/README.md).
+I intend to build Lir to support mapping between two pairs of in-memory representations of well known XML file types. I want to be able to transform a deserialized RSS file into the same data model as could represent an Atom file. Secondly I want to be able to transform a TCX (Training Center XML) model to a GPX (GPS Exchange Format) model. Both pairs of file types provide real world examples, and both have structures small enough that I can create Lir language to implement the mappings. Examples of these file types along with their structure when loaded into TYpeScript are shown in [the examples directory](docs/examples/README.md).
 
 > Show at least three steps.  For each step, describe what programs in your language you will be able to run after this step is implemented.
 
