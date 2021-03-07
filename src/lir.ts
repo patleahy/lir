@@ -1,4 +1,4 @@
-export const Lir = () => new LirRoot();
+export const Lir = () => new LirRootRule();
 
 class LirRule {
     protected children: LirRule[] = [];
@@ -10,6 +10,10 @@ class LirRule {
         this.toPath = LirRule.split(toPath);
     }
 
+    public from(path: string) : LirFrom {
+        return new LirFrom(this, path);
+    }
+
     public map(input: any, output?: any): any {
         if (output === undefined) 
             output = {};
@@ -19,8 +23,20 @@ class LirRule {
         return this.apply(output, outputValue, this.toPath);
     }
 
-    public with(path: string) : LirWithFrom {
-        return new LirWithFrom(this, path);
+    public with(...rules: LirRule[]) : LirRule {
+        for (var i = 0; i < rules.length; i++) {
+            var rule = rules[i];
+            if (rule instanceof LirRootRule) {
+                this.with(...rule.children);
+            } else {
+                this.children[this.children.length-1].add(rule);
+            }
+        }
+        return this;
+    }
+
+    public constant(value: any): LirConstantFrom {
+        return new LirConstantFrom(this, value)
     }
 
     public add(rule: LirRule) {
@@ -34,7 +50,7 @@ class LirRule {
         return this.walk(input[path[0]], path.slice(1));
     }
 
-    protected mapChildren(inputValue): any {
+    protected mapChildren(inputValue: any): any {
         var outputValue = {};
         if (this.children.length) {
             this.children.forEach(rule => {
@@ -71,6 +87,13 @@ class LirRule {
     }
 }
 
+class LirRootRule extends LirRule {
+    
+    constructor() {
+        super('', '');
+    }
+}
+
 class LirFrom {
     protected parent: LirRule;
     protected path: string;
@@ -83,36 +106,11 @@ class LirFrom {
     public to(path: string) : LirRule {
         var rule = new LirRule(this.path, path);
         this.parent.add(rule);
-        return rule;
+        return this.parent;
     }
 
     public each(): LirEachFrom {
         return new LirEachFrom(this.parent, this.path); 
-    }
-}
-
-class LirWithFrom extends LirFrom {
-    public to(path: string) : LirWithRule {
-        var rule = new LirWithRule(this.parent, this.path, path);
-        this.parent.add(rule);
-        return rule;
-    }
-}
-
-class LirWithRule extends LirRule {
-    protected parent: LirRule;
-    
-    public constructor(parent: LirRule, fromPath: string, toPath: string) {
-        super(fromPath, toPath);
-        this.parent = parent;
-    }
-
-    public and(path: string): LirWithFrom {
-        return new LirWithFrom(this.parent, path);
-    }
-
-    public constant(value: any): LirConstantFrom {
-        return new LirConstantFrom(this.parent, value)
     }
 }
 
@@ -121,7 +119,7 @@ class LirEachFrom extends LirFrom {
     public to(path: string) : LirRule {
         var rule = new LirEachRule(this.path, path);
         this.parent.add(rule);
-        return rule;
+        return this.parent;
     }
 }
 
@@ -140,7 +138,7 @@ class LirEachRule extends LirRule {
     }
 }
 
-class LirConstantFrom extends LirWithFrom { 
+class LirConstantFrom extends LirFrom { 
     private value: any;
 
     public constructor(parent: LirRule, value: any) {
@@ -148,18 +146,18 @@ class LirConstantFrom extends LirWithFrom {
         this.value = value;
     }
 
-    to(path: string): LirConstantRule {
-        var rule = new LirConstantRule(this.parent, this.value, path);
+    public to(path: string): LirRule {
+        var rule = new LirConstantRule(this.value, path);
         this.parent.add(rule);
-        return rule;
+        return this.parent;
     }
 }
 
-class LirConstantRule extends LirWithRule {
+class LirConstantRule extends LirRule {
     private value: any;
 
-    constructor(parent: LirRule, value: any, path: string) {
-        super(parent, null, path);
+    constructor(value: any, path: string) {
+        super(null, path);
         this.value = value;
     }
 
@@ -168,16 +166,5 @@ class LirConstantRule extends LirWithRule {
             output = {};
 
         return this.apply(output, this.value, this.toPath);
-    }
-}
-
-class LirRoot extends LirRule {
-    
-    public constructor() {
-        super('', '');
-    }
-
-    public from(path: string) : LirFrom {
-        return new LirFrom(this, path);
     }
 }
