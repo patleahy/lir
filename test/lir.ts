@@ -256,7 +256,7 @@ describe('Lir', () => {
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].Longitude).to.be.equal(-123.958723);
     });
 
-    it('and constant value to mapping', () => {
+    it('add constant value to mapping', () => {
         
         var source = {
             rss: {
@@ -272,9 +272,12 @@ describe('Lir', () => {
             from('rss.channel.link')
             .to('feed.link')
             .with(
-                 from('href').to('href')
-                .constant('alternate').to('rel')
-                .constant('text/html').to('type'))
+                  from('href').to('href')
+                 .include({
+                    'rel' : 'alternate',
+                    'type' : 'text/html'
+                 })
+                )
             .map(source);
 
         expect(output.feed.link.href).to.be.equal('https://myblog.org/feed/');

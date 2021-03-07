@@ -24,20 +24,21 @@ class LirRule {
         return this.apply(output, outputValue, this.toPath);
     }
 
-    public with(...rules: LirRule[]) : LirRule {
-        for (var i = 0; i < rules.length; i++) {
-            var rule = rules[i];
-            if (rule instanceof LirRootRule) {
-                this.with(...rule.children);
-            } else {
-                this.children[this.children.length-1].add(rule);
+    public with(rule: LirRule) : LirRule {
+        if (rule instanceof LirRootRule) {
+            for (var i = 0; i < rule.children.length; i++) {
+                this.with(rule.children[i]);
             }
+        } else {
+            this.children[this.children.length-1].add(rule);
         }
         return this;
     }
 
-    public constant(value: any): LirConstantFrom {
-        return new LirConstantFrom(this, value)
+    public include(value: any): LirRule {
+        var rule = new LirIncludeRule(value);
+        this.children.push(rule);
+        return this;
     }
 
     public add(rule: LirRule) {
@@ -55,7 +56,7 @@ class LirRule {
         var outputValue = {};
         if (this.children.length) {
             this.children.forEach(rule => {
-                rule.map(inputValue, outputValue);
+                outputValue = rule.map(inputValue, outputValue);
             });
         } else {
             outputValue = inputValue;
@@ -139,33 +140,19 @@ class LirEachRule extends LirRule {
     }
 }
 
-class LirConstantFrom extends LirFrom { 
+
+class LirIncludeRule extends LirRule {
     private value: any;
 
-    public constructor(parent: LirRule, value: any) {
-        super(parent, null);
-        this.value = value;
-    }
-
-    public to(path: string): LirRule {
-        var rule = new LirConstantRule(this.value, path);
-        this.parent.add(rule);
-        return this.parent;
-    }
-}
-
-class LirConstantRule extends LirRule {
-    private value: any;
-
-    constructor(value: any, path: string) {
-        super(null, path);
+    constructor(value: any) {
+        super(null, null);
         this.value = value;
     }
 
     public map(_: any, output?: any): any {
-        if (output === undefined) 
+        if (output === undefined)
             output = {};
 
-        return this.apply(output, this.value, this.toPath);
+        return { ...output, ...this.value };
     }
 }
