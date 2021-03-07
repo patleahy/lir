@@ -1,12 +1,12 @@
 import { expect } from 'chai';
-import { Lir } from '../src/lir';
+import { from } from '../src/lir';
 
 describe('Lir', () => {
 
     it('single shallow property mapping', () => {
         var source = { name: 'My Blog' };
 
-        var output = Lir().from('name').to('title').map(source);
+        var output = from('name').to('title').map(source);
 
         expect(output.title).to.be.equal('My Blog');
     });
@@ -20,7 +20,7 @@ describe('Lir', () => {
             }
         };
         
-        var output = Lir().from('rss.channel.title').to('feed.title.#text').map(source);
+        var output = from('rss.channel.title').to('feed.title.#text').map(source);
 
         expect(output.feed.title['#text']).to.be.equal('My Blog');
     });
@@ -40,7 +40,8 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir().from('gpx.trk.trkseg.trkpt')
+        var output = 
+             from('gpx.trk.trkseg.trkpt')
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
             .map(source);
 
@@ -62,8 +63,8 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('rss.channel.title').to('feed.title.text')
+        var output = 
+             from('rss.channel.title').to('feed.title.text')
             .from('rss.channel.description').to('feed.subtitle.text')
             .map(source);
 
@@ -83,8 +84,8 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('rss.channel.title').to('feed.title.text')
+        var output = 
+             from('rss.channel.title').to('feed.title.text')
             .from('rss.channel.link.href').to('feed.link.href')
             .map(source);
 
@@ -104,9 +105,9 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('rss.channel').to('feed')
-            .with(Lir().from('title').to('title.text'))
+        var output = 
+             from('rss.channel').to('feed')
+            .with(from('title').to('title.text'))
             .map(source);
         
         expect(output.feed.title.text).to.be.equal('My Blog');
@@ -125,10 +126,10 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('rss.channel').to('feed')
-            .with(Lir()
-                .from('title').to('title.text')
+        var output = 
+             from('rss.channel').to('feed')
+            .with(
+                 from('title').to('title.text')
                 .from('link.href').to('link.href'))
             .map(source);
         
@@ -150,11 +151,11 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('gpx').to('TrainingCenterDatabase')
-            .with(Lir()
-                .from('trk').to('Courses')
-                .with(Lir().from('trkseg.trkpt').to('Course.Track.Trackpoint')))
+        var output = 
+             from('gpx').to('TrainingCenterDatabase')
+            .with(
+                 from('trk').to('Courses')
+                .with(from('trkseg.trkpt').to('Course.Track.Trackpoint')))
             .map(source);
 
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lat).to.be.equal(45.839295);
@@ -181,8 +182,9 @@ describe('Lir', () => {
             }
         };
 
-        var lir = Lir()
-        lir.from('gpx.trk.trkseg.trkpt').each()
+        var lir = 
+             from('gpx.trk.trkseg.trkpt')
+            .each()
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
 
         var output = lir.map(source);
@@ -211,10 +213,10 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('gpx.trk.trkseg.trkpt').each()
+        var output = 
+             from('gpx.trk.trkseg.trkpt').each()
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
-            .with(Lir().from('lat').to('Latitude'))
+            .with(from('lat').to('Latitude'))
             .map(source);
 
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].Latitude).to.be.equal(45.839295);
@@ -238,11 +240,11 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('gpx.trk.trkseg.trkpt').each()
+        var output = 
+             from('gpx.trk.trkseg.trkpt').each()
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
-            .with(Lir()
-                .from('lat').to('Latitude')
+            .with(
+                 from('lat').to('Latitude')
                 .from('lon').to('Longitude'))
             .map(source);
 
@@ -266,11 +268,11 @@ describe('Lir', () => {
             }
         };
 
-        var output = Lir()
-            .from('rss.channel.link')
+        var output =
+            from('rss.channel.link')
             .to('feed.link')
-            .with(Lir()
-                .from('href').to('href')
+            .with(
+                 from('href').to('href')
                 .constant('alternate').to('rel')
                 .constant('text/html').to('type'))
             .map(source);

@@ -1,4 +1,5 @@
 export const Lir = () => new LirRootRule();
+export const from = (path: string) => Lir().from(path);
 
 class LirRule {
     protected children: LirRule[] = [];
