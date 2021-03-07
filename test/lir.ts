@@ -302,4 +302,27 @@ describe('Lir', () => {
 
         expect(output.feed.updated.substring(0, 11)).to.equal("2020-12-25T");
     });
+
+    it("using to transform a field in an array", () => {
+        var source = {
+            rss: {
+                items: [
+                    { lastBuildDate: '12/25/2020' },
+                    { lastBuildDate: '06/04/2020' },
+                ]
+            }
+        };
+
+        var output = from('rss.items')
+            .each()
+            .to('feed.entry')
+            .with(
+                from('lastBuildDate')
+                .using(dt => (new Date(dt)).toISOString())
+                .to('updated'))
+            .map(source);
+
+        expect(output.feed.entry[0].updated.substring(0, 11)).to.equal("2020-12-25T");
+        expect(output.feed.entry[1].updated.substring(0, 11)).to.equal("2020-06-04T");
+    });
 });
