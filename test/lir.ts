@@ -118,7 +118,7 @@ describe('Lir', () => {
     });
 
 
-    it("child mapping using width and and", () => {
+    it("child mapping using with and and", () => {
         var source = {
             rss: {
                 channel: {
@@ -139,5 +139,33 @@ describe('Lir', () => {
         expect(output.feed.title.text).to.be.equal('My Blog');
     });
 
+    it("child mapping using two with/and blocks", () => {
+        var source = {
+            gpx: {
+                trk: { 
+                    trkseg: {
+                        trkpt: [
+                            { lat: 45.839295, lon: -123.959679 },
+                            { lat: 45.838555, lon: -123.959732 },
+                            { lat: 45.838526, lon: -123.958723 }
+                        ]
+                    }
+                }
+            }
+        };
 
+        var lir = Lir()
+        lir.from('gpx').to('TrainingCenterDatabase')
+                .with('trk').to('Courses')
+                    .with('trkseg.trkpt').to('Course.Track.Trackpoint');
+
+        var output = lir.map(source);
+
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lat).to.be.equal(45.839295);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lat).to.be.equal(45.838555);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lat).to.be.equal(45.838526);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lon).to.be.equal(-123.959679);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lon).to.be.equal(-123.959732);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lon).to.be.equal(-123.958723);
+    });
 });
