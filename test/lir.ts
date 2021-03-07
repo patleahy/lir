@@ -325,4 +325,40 @@ describe('Lir', () => {
         expect(output.feed.entry[0].updated.substring(0, 11)).to.equal("2020-12-25T");
         expect(output.feed.entry[1].updated.substring(0, 11)).to.equal("2020-06-04T");
     });
+
+
+    it("using to transform in an array element into property", () => {
+
+        var source = {
+            gpx: {
+                trk: {
+                    trkseg: {
+                        trkpt: [
+                            {
+                                lat: 45.839295,
+                                lon: -123.959679,
+                            },
+                            {
+                                lat: 45.8385559,
+                                lon: -123.959732,
+                            }
+                        ]
+                    }
+                }
+            }
+        };
+
+        function calcDistance(point: any) {
+            return { DistanceMeters: point.lat * 10 };
+        } 
+
+        var output = from('gpx.trk.trkseg.trkpt')
+            .each()
+            .using(calcDistance)
+            .to('Track.Trackpoint')
+            .map(source);
+
+        expect(output.Track.Trackpoint[0].DistanceMeters).to.be.approximately(458.3929, 0.0001);
+        expect(output.Track.Trackpoint[1].DistanceMeters).to.be.approximately(458.3855, 0.0001);
+    });
 });
