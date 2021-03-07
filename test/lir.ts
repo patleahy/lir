@@ -62,7 +62,7 @@ describe('Lir', () => {
             rss: {
                 channel: {
                     title: 'My Blog',
-                    description: "The very interesting things I do."
+                    description: 'The very interesting things I do.'
                 }
             }
         };
@@ -97,7 +97,7 @@ describe('Lir', () => {
         expect(output.feed.link.href).to.be.equal('http://myspace.com/pat');
     });
 
-    it("child mapping using with", () => {
+    it('child mapping using with', () => {
         var source = {
             rss: {
                 channel: {
@@ -118,7 +118,7 @@ describe('Lir', () => {
     });
 
 
-    it("child mapping using with and and", () => {
+    it('child mapping using with and and', () => {
         var source = {
             rss: {
                 channel: {
@@ -139,7 +139,7 @@ describe('Lir', () => {
         expect(output.feed.title.text).to.be.equal('My Blog');
     });
 
-    it("child mapping using two with/and blocks", () => {
+    it('child mapping using two with/and blocks', () => {
         var source = {
             gpx: {
                 trk: { 
@@ -169,7 +169,7 @@ describe('Lir', () => {
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lon).to.be.equal(-123.958723);
     });
 
-    it("map array", () => {
+    it('map array', () => {
 
         var source = {
             gpx: {
@@ -199,7 +199,7 @@ describe('Lir', () => {
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lon).to.be.equal(-123.958723);
     });
 
-    it("map property inside array", () => {
+    it('map property inside array', () => {
 
         var source = {
             gpx: {
@@ -228,7 +228,7 @@ describe('Lir', () => {
     });
 
 
-    it("map two properties inside array", () => {
+    it('map two properties inside array', () => {
 
         var source = {
             gpx: {
