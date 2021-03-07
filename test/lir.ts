@@ -90,11 +90,52 @@ describe('Lir', () => {
 
         var lir = Lir();
         lir.from('rss.channel.title').to('feed.title.text');
-        lir.from('rss.channel.link.href').to('feed.link.link.href');
+        lir.from('rss.channel.link.href').to('feed.link.href');
         var output = lir.map(source);
 
         expect(output.feed.title.text).to.be.equal('My Blog');
-        expect(output.feed.link.link.href).to.be.equal('http://myspace.com/pat');
+        expect(output.feed.link.href).to.be.equal('http://myspace.com/pat');
+    });
+
+    it("child mapping using with", () => {
+        var source = {
+            rss: {
+                channel: {
+                    title: 'My Blog',
+                    link: {
+                        href: 'http://myspace.com/pat',
+                    }
+                }
+            }
+        };
+
+        var lir = Lir();
+        lir.from('rss.channel').to('feed')
+            .with('title').to('title.text');
+        
+        var output = lir.map(source);
+        expect(output.feed.title.text).to.be.equal('My Blog');
+    });
+
+    it("child mapping using width and and", () => {
+        var source = {
+            rss: {
+                channel: {
+                    title: 'My Blog',
+                    link: {
+                        href: 'http://myspace.com/pat',
+                    }
+                }
+            }
+        };
+
+        var lir = Lir();
+        lir.from('rss.channel').to('feed')
+            .with('title').to('title.text');
+            // .and('like.href').to('link.href');
+        
+        var output = lir.map(source);
+        expect(output.feed.title.text).to.be.equal('My Blog');
     });
 
 });

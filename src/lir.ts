@@ -1,95 +1,99 @@
-export const Lir = () => new LirMapping();
+export const Lir = () => new LirRoot();
 
-class LirMapping {
-    private rules: LirTo[] = [];
+class LirRule {
+    private children: LirRule[] = [];
+    private fromPath: string[];
+    private toPath: string[];
 
-    public from(path: string): LirFrom {
-        return new LirFrom(this, path);
+    public constructor(fromPath: string, toPath: string) {
+        this.fromPath = LirRule.split(fromPath);
+        this.toPath = LirRule.split(toPath);
     }
 
-    public map(source: any): any {
-        var output = {};
-        for (var i = 0; i < this.rules.length; i++) {
-            this.rules[i].map(source, output);
+    public map(input: any, output?: any): any {
+        if (output === undefined) 
+            output = {};
+
+        var inputValue = this.walk(input, this.fromPath);
+        var outputValue;
+        if (this.children.length) {
+            outputValue = {};
+            this.children.forEach(rule => {
+                rule.map(inputValue, outputValue);
+            });
+        } else {
+            outputValue = inputValue;
         }
-        return output;
+
+        return this.apply(output, outputValue, this.toPath);
     }
 
-    public add(rule: LirTo) {
-        this.rules.push(rule);
+    public with(path: string) : LirWith {
+        return new LirWith(this, path);
+    }
+
+    public add(rule: LirRule) {
+        this.children.push(rule);
+    }
+
+    private walk(input: any, path: string[]): any {
+        if (path.length === 0)
+            return input;
+
+        return this.walk(input[path[0]], path.slice(1));
+    }
+
+    private apply(object: any, value: any, path: string[]): any {
+        if (path.length == 0) {
+            object = value;
+        } else {
+            var key = path[0];
+            if (path.length === 1) {
+                object[key] = value;
+            } else {
+                var property = object[key];
+                if (property === undefined) {
+                    object[key] = property = {};
+                }
+                this.apply(property, value, path.slice(1));
+            }
+        }
+        return object;
+    }
+
+    private static split(path: string): string[] {
+        if (!path)
+            return [];
+        return path.split('.');
     }
 }
 
 class LirFrom {
+    private parent: LirRule;
     private path: string;
-    private mapping: LirMapping;
 
-    public constructor(mapping: LirMapping, path: string) {
-        this.mapping = mapping;
+    public constructor(parent: LirRule, path: string) {
+        this.parent = parent;
         this.path = path;
     }
 
-    public to(path: string): LirTo {
-        var to = new LirTo(this.path, path);
-        this.mapping.add(to);
-        return to;
+    public to(path: string) : LirRule {
+        var rule = new LirRule(this.path, path);
+        this.parent.add(rule);
+        return rule;
     }
 }
 
-class LirTo {
-    private pathFrom: string[];
-    private pathTo: string[];
+class LirWith extends LirFrom {
+}
 
-    public constructor(pathFrom: string, pathTo: string) {
-        this.pathFrom = (pathFrom || '').length > 0 ? pathFrom.split('.') : [];
-        this.pathTo = (pathTo || '').length > 0 ? pathTo.split('.') : [];
+class LirRoot extends LirRule {
+    
+    public constructor() {
+        super('', '');
     }
 
-    /** @internal */
-    public map(source: any, output: any): any {
-        var values = this.walk(source, this.pathFrom);
-        this.apply(this.pathTo, values, output);
-        return output;
-    }
-
-    private walk(obj: any, path: string[]): any {
-        var value = obj[path[0]];
-        if (path.length == 1) {
-            return value;
-        }
-        
-        var innerPath = path.slice(1);
-
-        if (Array.isArray(value)) {
-            return value.map(v => this.walk(v, innerPath));
-        }
-
-        return this.walk(value, innerPath);
-    }
-
-    private apply(path: string[], value: any, obj: any) {
-        var key = path[0];
-        var isArray = key.endsWith('[]');
-        if (isArray) { key = key.slice(0, key.length-2); }
-
-        if (path.length == 1) {
-            obj[key] = value;
-        } else {
-            var property = obj[key];
-            if (property === undefined) {
-                obj[key] = property = isArray ? [] : {};
-            }
-
-            var innerPath = path.slice(1);
-            if (isArray) {
-                value.forEach(item => {
-                    var newObj = {};
-                    this.apply(innerPath, item, newObj);
-                    property.push(newObj);
-                });
-            } else {
-                this.apply(innerPath, value, property);
-            }
-        }
+    public from(path: string) : LirFrom {
+        return new LirFrom(this, path);
     }
 }
