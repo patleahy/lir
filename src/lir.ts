@@ -1,9 +1,9 @@
 export const Lir = () => new LirRoot();
 
 class LirRule {
-    private children: LirRule[] = [];
-    private fromPath: string[];
-    private toPath: string[];
+    protected children: LirRule[] = [];
+    protected fromPath: string[];
+    protected toPath: string[];
 
     public constructor(fromPath: string, toPath: string) {
         this.fromPath = LirRule.split(fromPath);
@@ -15,35 +15,38 @@ class LirRule {
             output = {};
 
         var inputValue = this.walk(input, this.fromPath);
-        var outputValue;
-        if (this.children.length) {
-            outputValue = {};
-            this.children.forEach(rule => {
-                rule.map(inputValue, outputValue);
-            });
-        } else {
-            outputValue = inputValue;
-        }
-
+        var outputValue = this.mapChildren(inputValue);
         return this.apply(output, outputValue, this.toPath);
     }
 
-    public with(path: string) : LirWith {
-        return new LirWith(this, path);
+    public with(path: string) : LirWithFrom {
+        return new LirWithFrom(this, path);
     }
 
     public add(rule: LirRule) {
         this.children.push(rule);
     }
 
-    private walk(input: any, path: string[]): any {
+    protected walk(input: any, path: string[]): any {
         if (path.length === 0)
             return input;
 
         return this.walk(input[path[0]], path.slice(1));
     }
 
-    private apply(object: any, value: any, path: string[]): any {
+    protected mapChildren(inputValue): any {
+        var outputValue = {};
+        if (this.children.length) {
+            this.children.forEach(rule => {
+                rule.map(inputValue, outputValue);
+            });
+        } else {
+            outputValue = inputValue;
+        }
+        return outputValue;
+    }
+
+    protected apply(object: any, value: any, path: string[]): any {
         if (path.length == 0) {
             object = value;
         } else {
@@ -82,9 +85,13 @@ class LirFrom {
         this.parent.add(rule);
         return rule;
     }
+
+    public each(): LirEachFrom {
+        return new LirEachFrom(this.parent, this.path); 
+    }
 }
 
-class LirWith extends LirFrom {
+class LirWithFrom extends LirFrom {
     public to(path: string) : LirWithRule {
         var rule = new LirWithRule(this.parent, this.path, path);
         this.parent.add(rule);
@@ -100,8 +107,32 @@ class LirWithRule extends LirRule {
         this.parent = parent;
     }
 
-    public and(path: string): LirWith {
-        return new LirWith(this.parent, path);
+    public and(path: string): LirWithFrom {
+        return new LirWithFrom(this.parent, path);
+    }
+}
+
+class LirEachFrom extends LirFrom {
+    
+    public to(path: string) : LirRule {
+        var rule = new LirEachRule(this.path, path);
+        this.parent.add(rule);
+        return rule;
+    }
+}
+
+class LirEachRule extends LirRule {
+
+    public map(input: any, output?: any): any {
+        if (output === undefined)
+            output = {};
+
+        var inputValues = this.walk(input, this.fromPath);
+        var outputValues = [];
+        for (var i = 0; i < inputValues.length; i++) {
+            outputValues.push(this.mapChildren(inputValues[i]));
+        }
+        return this.apply(output, outputValues, this.toPath);
     }
 }
 

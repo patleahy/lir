@@ -168,4 +168,95 @@ describe('Lir', () => {
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lon).to.be.equal(-123.959732);
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lon).to.be.equal(-123.958723);
     });
+
+    it("map array", () => {
+
+        var source = {
+            gpx: {
+                trk: { 
+                    trkseg: {
+                        trkpt: [
+                            { lat: 45.839295, lon: -123.959679 },
+                            { lat: 45.838555, lon: -123.959732 },
+                            { lat: 45.838526, lon: -123.958723 }
+                        ]
+                    }
+                }
+            }
+        };
+
+        var lir = Lir()
+        lir.from('gpx.trk.trkseg.trkpt').each()
+            .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
+
+        var output = lir.map(source);
+
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lat).to.be.equal(45.839295);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lat).to.be.equal(45.838555);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lat).to.be.equal(45.838526);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].lon).to.be.equal(-123.959679);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].lon).to.be.equal(-123.959732);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].lon).to.be.equal(-123.958723);
+    });
+
+    it("map property inside array", () => {
+
+        var source = {
+            gpx: {
+                trk: { 
+                    trkseg: {
+                        trkpt: [
+                            { lat: 45.839295, lon: -123.959679 },
+                            { lat: 45.838555, lon: -123.959732 },
+                            { lat: 45.838526, lon: -123.958723 }
+                        ]
+                    }
+                }
+            }
+        };
+
+        var lir = Lir()
+        lir.from('gpx.trk.trkseg.trkpt').each()
+            .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
+            .with('lat').to('Latitude')
+
+        var output = lir.map(source);
+
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].Latitude).to.be.equal(45.839295);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].Latitude).to.be.equal(45.838555);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].Latitude).to.be.equal(45.838526);
+    });
+
+
+    it("map two properties inside array", () => {
+
+        var source = {
+            gpx: {
+                trk: { 
+                    trkseg: {
+                        trkpt: [
+                            { lat: 45.839295, lon: -123.959679 },
+                            { lat: 45.838555, lon: -123.959732 },
+                            { lat: 45.838526, lon: -123.958723 }
+                        ]
+                    }
+                }
+            }
+        };
+
+        var lir = Lir()
+        lir.from('gpx.trk.trkseg.trkpt').each()
+            .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
+                .with('lat').to('Latitude')
+                .and('lon').to('Longitude')
+
+        var output = lir.map(source);
+
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].Latitude).to.be.equal(45.839295);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].Latitude).to.be.equal(45.838555);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].Latitude).to.be.equal(45.838526);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[0].Longitude).to.be.equal(-123.959679);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].Longitude).to.be.equal(-123.959732);
+        expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].Longitude).to.be.equal(-123.958723);
+    });
 });
