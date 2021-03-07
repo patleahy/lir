@@ -259,4 +259,30 @@ describe('Lir', () => {
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[1].Longitude).to.be.equal(-123.959732);
         expect(output.TrainingCenterDatabase.Courses.Course.Track.Trackpoint[2].Longitude).to.be.equal(-123.958723);
     });
+
+    it('and constant value to mapping', () => {
+        
+        var source = {
+            rss: {
+                channel: {
+                    link: {
+                        href: 'https://myblog.org/feed/'
+                    }
+                }
+            }
+        };
+
+        var lir = Lir()
+        lir.from('rss.channel.link')
+            .to('feed.link')
+            .with('href').to('href')
+            .constant('alternate').to('rel')
+            .constant('text/html').to('type');
+
+        var output = lir.map(source);
+
+        expect(output.feed.link.href).to.be.equal('https://myblog.org/feed/');
+        expect(output.feed.link.rel).to.be.equal('alternate');
+        expect(output.feed.link.type).to.be.equal('text/html');
+    });
 });

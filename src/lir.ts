@@ -100,7 +100,7 @@ class LirWithFrom extends LirFrom {
 }
 
 class LirWithRule extends LirRule {
-    private parent: LirRule;
+    protected parent: LirRule;
     
     public constructor(parent: LirRule, fromPath: string, toPath: string) {
         super(fromPath, toPath);
@@ -109,6 +109,10 @@ class LirWithRule extends LirRule {
 
     public and(path: string): LirWithFrom {
         return new LirWithFrom(this.parent, path);
+    }
+
+    public constant(value: any): LirConstantFrom {
+        return new LirConstantFrom(this.parent, value)
     }
 }
 
@@ -133,6 +137,37 @@ class LirEachRule extends LirRule {
             outputValues.push(this.mapChildren(inputValues[i]));
         }
         return this.apply(output, outputValues, this.toPath);
+    }
+}
+
+class LirConstantFrom extends LirWithFrom { 
+    private value: any;
+
+    public constructor(parent: LirRule, value: any) {
+        super(parent, null);
+        this.value = value;
+    }
+
+    to(path: string): LirConstantRule {
+        var rule = new LirConstantRule(this.parent, this.value, path);
+        this.parent.add(rule);
+        return rule;
+    }
+}
+
+class LirConstantRule extends LirWithRule {
+    private value: any;
+
+    constructor(parent: LirRule, value: any, path: string) {
+        super(parent, null, path);
+        this.value = value;
+    }
+
+    public map(_: any, output?: any): any {
+        if (output === undefined) 
+            output = {};
+
+        return this.apply(output, this.value, this.toPath);
     }
 }
 
