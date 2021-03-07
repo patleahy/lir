@@ -117,6 +117,7 @@ describe('Lir', () => {
         expect(output.feed.title.text).to.be.equal('My Blog');
     });
 
+
     it("child mapping using width and and", () => {
         var source = {
             rss: {
@@ -131,11 +132,12 @@ describe('Lir', () => {
 
         var lir = Lir();
         lir.from('rss.channel').to('feed')
-            .with('title').to('title.text');
-            // .and('like.href').to('link.href');
+            .with('title').to('title.text')
+            .and('link.href').to('link.href');
         
         var output = lir.map(source);
         expect(output.feed.title.text).to.be.equal('My Blog');
     });
+
 
 });

@@ -69,8 +69,8 @@ class LirRule {
 }
 
 class LirFrom {
-    private parent: LirRule;
-    private path: string;
+    protected parent: LirRule;
+    protected path: string;
 
     public constructor(parent: LirRule, path: string) {
         this.parent = parent;
@@ -85,6 +85,24 @@ class LirFrom {
 }
 
 class LirWith extends LirFrom {
+    public to(path: string) : LirWithRule {
+        var rule = new LirWithRule(this.parent, this.path, path);
+        this.parent.add(rule);
+        return rule;
+    }
+}
+
+class LirWithRule extends LirRule {
+    private parent: LirRule;
+    
+    public constructor(parent: LirRule, fromPath: string, toPath: string) {
+        super(fromPath, toPath);
+        this.parent = parent;
+    }
+
+    public and(path: string): LirWith {
+        return new LirWith(this.parent, path);
+    }
 }
 
 class LirRoot extends LirRule {
