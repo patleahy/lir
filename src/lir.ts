@@ -1,6 +1,7 @@
 export const Lir = () => new LirRootRule();
 export const from = (path: string) => Lir().from(path);
 
+
 class LirRule {
     protected children: LirRule[] = [];
     protected fromPath: string[];
@@ -89,12 +90,14 @@ class LirRule {
     }
 }
 
+
 class LirRootRule extends LirRule {
     
     constructor() {
         super('', '');
     }
 }
+
 
 class LirFrom {
     protected parent: LirRule;
@@ -114,7 +117,12 @@ class LirFrom {
     public each(): LirEachFrom {
         return new LirEachFrom(this.parent, this.path); 
     }
+
+    public using(fn: (x: any) => any) {
+        return new LirUsingFrom(this.parent, this.path, fn);
+    }
 }
+
 
 class LirEachFrom extends LirFrom {
     
@@ -124,6 +132,7 @@ class LirEachFrom extends LirFrom {
         return this.parent;
     }
 }
+
 
 class LirEachRule extends LirRule {
 
@@ -154,5 +163,41 @@ class LirIncludeRule extends LirRule {
             output = {};
 
         return { ...output, ...this.value };
+    }
+}
+
+
+class LirUsingFrom extends LirFrom {
+    private fn: (x: any) => any;
+
+    constructor(parent: LirRule, path: string, fn: (x: any) => any) {
+        super(parent, path);
+        this.fn = fn;
+    }
+
+    public to(path: string) : LirRule {
+        var rule = new LirUsingRule(this.path, path, this.fn);
+        this.parent.add(rule);
+        return this.parent;
+    }
+}
+
+
+class LirUsingRule extends LirRule {
+    private fn: (x: any) => any;
+
+    constructor(fromPath: string, toPath: string, fn: (x: any) => any) {
+        super(fromPath, toPath);
+        this.fn = fn;
+    }
+
+    public map(input: any, output?: any): any {
+        if (output === undefined) 
+            output = {};
+
+        var inputValue = this.walk(input, this.fromPath);
+        inputValue = this.fn(inputValue);
+        var outputValue = this.mapChildren(inputValue);
+        return this.apply(output, outputValue, this.toPath);
     }
 }

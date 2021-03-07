@@ -284,4 +284,22 @@ describe('Lir', () => {
         expect(output.feed.link.rel).to.be.equal('alternate');
         expect(output.feed.link.type).to.be.equal('text/html');
     });
+
+    it("using to transform a field", () => {
+
+        var source = {
+            rss: {
+                channel: {
+                    lastBuildDate: '12/25/2020',
+                }
+            }
+        };
+
+        var output = from('rss.channel.lastBuildDate')
+            .using(dt => (new Date(dt)).toISOString())
+            .to('feed.updated')
+            .map(source);
+
+        expect(output.feed.updated.substring(0, 11)).to.equal("2020-12-25T");
+    });
 });
