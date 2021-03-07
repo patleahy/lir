@@ -22,10 +22,11 @@ class LirRule {
         if (output === undefined) 
             output = {};
 
-        var inputValue = this.walk(input, this.fromPath);
+        var innerObject = this.walk(input, this.fromPath, false);
+        var inputValue = innerObject[this.fromPath[this.fromPath.length-1]];
         inputValue = this.transform(inputValue);
         var outputValue = this.mapChildren(inputValue);
-        return this.apply(output, outputValue, this.toPath);
+        return this.apply(output, outputValue, this.toPath, false);
     }
 
     public with(rule: LirRule) : LirRule {
@@ -49,11 +50,21 @@ class LirRule {
         this.children.push(rule);
     }
 
-    protected walk(input: any, path: string[]): any {
-        if (path.length === 0)
+    protected walk(input: any, path: string[], create: boolean): any {
+        if (path.length === 1)
             return input;
 
-        return this.walk(input[path[0]], path.slice(1));
+        var key = path[0];
+        var inner = input[key];
+        if (inner === undefined) {
+            if (create) {
+                input[key] = inner = {};
+            } else {
+                throw(`'property not found: ${key}`);
+            }
+        }
+
+        return this.walk(inner, path.slice(1), create);
     }
 
     protected mapChildren(inputValue: any): any {
@@ -68,21 +79,31 @@ class LirRule {
         return outputValue;
     }
 
-    protected apply(object: any, value: any, path: string[]): any {
-        if (path.length == 0) {
-            object = value;
+    protected 
+
+    protected apply(object: any, value: any, path: string[], isArray: boolean): any {
+        
+        var innerObject = this.walk(object, path, true);
+        var key = path[path.length-1];
+        var property = innerObject[key];
+
+        if (property === undefined) {
+            innerObject[key] = value;
         } else {
-            var key = path[0];
-            if (path.length === 1) {
-                object[key] = value;
-            } else {
-                var property = object[key];
-                if (property === undefined) {
-                    object[key] = property = {};
+            if (isArray) {
+                for (var i = 0; i < value.length; i++) {
+                    var item = property[i];
+                    if (item === undefined) {
+                        property.push(value[i]);
+                    } else {
+                        property[i] = {...item, ...value[i]};
+                    }
                 }
-                this.apply(property, value, path.slice(1));
+            } else {
+                innerObject[key] = {...property, ...value};
             }
         }
+
         return object;
     }
 
@@ -98,6 +119,10 @@ class LirRootRule extends LirRule {
     
     constructor() {
         super('', '');
+    }
+
+    public map(input: any): any {
+        return this.mapChildren(input);
     }
 }
 
@@ -147,12 +172,12 @@ class LirEachRule extends LirRule {
         if (output === undefined)
             output = {};
 
-        var inputValues = this.walk(input, this.fromPath);
+        var inputValues = this.walk(input, this.fromPath, false)[this.fromPath[this.fromPath.length-1]];
         var outputValues = [];
         for (var i = 0; i < inputValues.length; i++) {
             outputValues.push(this.mapChildren(this.transform(inputValues[i])));
         }
-        return this.apply(output, outputValues, this.toPath);
+        return this.apply(output, outputValues, this.toPath, true);
     }
 }
 

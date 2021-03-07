@@ -334,14 +334,8 @@ describe('Lir', () => {
                 trk: {
                     trkseg: {
                         trkpt: [
-                            {
-                                lat: 45.839295,
-                                lon: -123.959679,
-                            },
-                            {
-                                lat: 45.8385559,
-                                lon: -123.959732,
-                            }
+                            { lat: 45.839295, lon: -123.959679 },
+                            { lat: 45.8385559, lon: -123.959732 }
                         ]
                     }
                 }
@@ -352,12 +346,25 @@ describe('Lir', () => {
             return { DistanceMeters: point.lat * 10 };
         } 
 
-        var output = from('gpx.trk.trkseg.trkpt')
+        var rules = from('gpx.trk.trkseg.trkpt')
+            .each()
+            .to('Track.Trackpoint')
+            .with(
+                 from("lat").to("Latitude")
+                .from("lon").to("Longitude"));
+
+        rules.from('gpx.trk.trkseg.trkpt')
             .each()
             .using(calcDistance)
-            .to('Track.Trackpoint')
-            .map(source);
+            .to('Track.Trackpoint');
+        
+        var output = rules.map(source);
 
+        expect(output.Track.Trackpoint[0].Latitude).to.be.equal(45.839295);
+        expect(output.Track.Trackpoint[0].Longitude).to.be.equal(-123.959679);
+        expect(output.Track.Trackpoint[1].Latitude).to.be.equal(45.8385559);
+        expect(output.Track.Trackpoint[1].Longitude).to.be.equal(-123.959732);
+        
         expect(output.Track.Trackpoint[0].DistanceMeters).to.be.approximately(458.3929, 0.0001);
         expect(output.Track.Trackpoint[1].DistanceMeters).to.be.approximately(458.3855, 0.0001);
     });
