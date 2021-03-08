@@ -1,3 +1,7 @@
+/**
+ * Lir rules which maps from a GPX format to TCX format.
+ */
+
 import { from } from './lir';
 import { haversine } from './haversine';
 
@@ -11,7 +15,13 @@ export const rules =
         .from('ele').to('AltitudeMeters'));
 
 
-
+// TCX point contain a running total of the distance since the start. 
+// GPX doesn't have this data but we can calculate it.
+// This takes advantage the using keyword to add an custom transformation 
+// function to the mapping rules. We add the calcDistance function
+// to turn the input trackpoint into a object like this 
+// "{ 'DistanceMeters' : 12.42 }". That object will then be merged into the 
+// Trackpoint object that was already created using the mappings above.
 
 rules.from('gpx.trk.trkseg.trkpt').each().using(calcDistance)
     .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
