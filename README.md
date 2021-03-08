@@ -50,7 +50,7 @@ These examples will show the Lir code to convert from an example input structure
 To map a property from in input to output:
 
 *Input*
-```json
+```js
 {
     rss: {
         channel: {
@@ -66,7 +66,7 @@ var output = from('rss.channel.title').to('feed.title.#text').map(source);
 ```
 
 *Output*
-```json
+```js
 {
     feed: {
       title: {
@@ -79,7 +79,7 @@ var output = from('rss.channel.title').to('feed.title.#text').map(source);
 You can map multiple properties:
 
 *Input*
-```json
+```js
 {
     rss: {
         channel: {
@@ -99,7 +99,7 @@ var output =
 ```
 
 *Output*
-```json
+```js
 {
     feed: {
       title: {
@@ -115,7 +115,7 @@ var output =
 Properties you include in the mapping rules which are not contained in the input will be ignored and not result in an exception. For example in this example the property `rss.category.title` do not exist in the input. The other properties are successfully mapped.
 
 *Input*
-```json
+```js
 {
     rss: {
         channel: {
@@ -134,7 +134,7 @@ var output =
 ```
 
 *Output*
-```json
+```js
 {
     feed: {
         title: {
@@ -147,7 +147,7 @@ var output =
 You can use the `with` keyword to specify mappings at which are scoped to the parent rule. In the next example `rss.channel` will be mapped to `feed`. How the mapping is done is specified using the rules inside the `with` method.
 
 *Input*
-```json
+```js
 {
     rss: {
         channel: {
@@ -171,7 +171,7 @@ var output =
 ```
 
 *Output*
-```json
+```js
 {
     feed: {
         title: {
@@ -186,7 +186,7 @@ You can next `with` scopes inside other `with` scopes:
 
 
 *Input*
-```json
+```js
 {
     gpx: {
         trk: { 
@@ -213,7 +213,7 @@ var output =
 ```
 
 *Output*
-```json
+```js
 {
     TrainingCenterDatabase: {
         Courses: {
@@ -236,7 +236,7 @@ In the previous example the property `trkpt` in the input contained an array. Th
 If you ean to map the values inside the array to a different output structure you must use the `each` keyword to specify rules which will be applied to each item in the input array.
 
 *Input*
-```json
+```js
 {
     gpx: {
         trk: { 
@@ -264,7 +264,7 @@ var output =
 ```
 
 *Output*
-```json
+```js
 {
     TrainingCenterDatabase: {
         Courses: {
@@ -285,7 +285,7 @@ var output =
 You can include additional littoral values in the output using append the `include` keyword to a rule. 
 
 *Input*
-```json
+```js
 {
     rss: {
         channel: {
@@ -313,7 +313,7 @@ var output =
 ```
 
 *Output*
-```json
+```js
 {
     feed: {
         link: {
@@ -330,7 +330,7 @@ You can specify a function to modify the input value of a property before it is 
 This example inserts a function to convert the format of a date time string.
 
 *Input*
-```json
+```js
 {
     rss: {
         channel: {
@@ -351,7 +351,7 @@ var output = from('rss.channel.lastBuildDate')
 ```
 
 *Output*
-```json
+```js
 {
     feed: {
         updated: '2020-11-25T00:00:00.000Z'
