@@ -10,7 +10,7 @@ export const rules = from('rss.channel').to('feed')
         .from('link').to('link')
         .with(
              from('@_href').to('@_href')
-            .include({
+            .include({ 
                 'rel' : 'alternate',
                 'type' : 'text/html'
              })
@@ -23,5 +23,5 @@ rules
          from('title').to('title.#text').include(typeHtml)
         .from('dc:creator').to('author.name')
         .from('description').to('summary.#text').include(typeHtml)
-        // .from('content:encoded').to('content.#text')
+        .from('content:encoded').to('content.#text')
     );
