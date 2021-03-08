@@ -1,7 +1,5 @@
 import { from } from './lir';
-
-
-
+import { haversine } from './haversine';
 
 export const rules = from('gpx.metadata.name').to('TrainingCenterDatabase.Courses.Course.Name')
     .from('gpx.trk.trkseg.trkpt').each()
@@ -12,22 +10,20 @@ export const rules = from('gpx.metadata.name').to('TrainingCenterDatabase.Course
             .from('time').to('Time')
             .from('ele').to('AltitudeMeters'));
 
-
-function haversine(lat1, lon1, lat2, lon2) {
-    return 42.0;
-}
-
-var distance = 0.0;
-var prevPoint = undefined;
-function calcDistance(point: any): any {
-    if (prevPoint) {
-        distance += haversine(prevPoint['@_lat'], prevPoint['@_lon'], point['@_lat'], point['@_lon']);
-    }
-    prevPoint = point;
-    return { 'DistanceMeters' : distance };
-}
-
 rules.from('gpx.trk.trkseg.trkpt')
     .each()
     .using(calcDistance)
     .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
+
+
+
+var distance = 0.0;
+var prevPoint = undefined;
+function calcDistance(point: any): any {
+    var currPoint = [ parseFloat(point['@_lat']), parseFloat(point['@_lon']) ];
+    if (prevPoint) {
+        distance += haversine(prevPoint[0], prevPoint[1], currPoint[0], currPoint[1]);
+    }
+    prevPoint = currPoint;
+    return { 'DistanceMeters' : distance };
+}
