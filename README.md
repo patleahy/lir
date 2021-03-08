@@ -97,7 +97,7 @@ You can map multiple properties:
 *Code*
 ```ts
 var output = 
-    from('rss.channel.title').to('feed.title.text')
+     from('rss.channel.title').to('feed.title.text')
     .from('rss.channel.description').to('feed.subtitle.text')
     .map(source);
 ```
@@ -171,9 +171,9 @@ You can use the `with` keyword to specify mappings at which are scoped to the pa
 *Code*
 ```ts
 var output = 
-    from('rss.channel').to('feed')
+     from('rss.channel').to('feed')
     .with(
-            from('title').to('title.text')
+         from('title').to('title.text')
         .from('link.href').to('link.href'))
     .map(source);
 ```
@@ -215,10 +215,11 @@ You can next `with` scopes inside other `with` scopes:
 *Code*
 ```ts
 var output = 
-    from('gpx').to('TrainingCenterDatabase')
+     from('gpx').to('TrainingCenterDatabase')
     .with(
-        from('trk').to('Courses')
-        .with(from('trkseg.trkpt').to('Course.Track.Trackpoint')))
+         from('trk').to('Courses')
+        .with(
+            from('trkseg.trkpt').to('Course.Track.Trackpoint')))
     .map(source);
 ```
 
@@ -267,10 +268,11 @@ If you ean to map the values inside the array to a different output structure yo
 *Code*
 ```ts
 var output = 
-    from('gpx.trk.trkseg.trkpt').each()
+     from('gpx.trk.trkseg.trkpt')
+    .each()
     .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
     .with(
-        from('lat').to('Latitude')
+         from('lat').to('Latitude')
         .from('lon').to('Longitude'))
     .map(source);
 ```
@@ -314,11 +316,12 @@ You can include additional literal values in the output using append the `includ
 *Code*
 ```ts
 var output =
-    from('rss.channel.link')
+     from('rss.channel.link')
     .to('feed.link')
     .with(
-        from('href').to('href')
-        .include({
+         from('href').to('href')
+        .include(
+            {
                 'rel' : 'alternate',
                 'type' : 'text/html'
             })
@@ -374,4 +377,3 @@ var output = from('rss.channel.lastBuildDate')
     }
 }
 ```
-
