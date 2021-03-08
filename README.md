@@ -47,6 +47,8 @@ npm run test
 
 These examples will show the Lir code to convert from an example input structure to an output structure. The examples show increasing more complected rules. A simple rule specifics a `to` property and a `from` property. Rules are executed by calling `map` on the rule, passing in a source object. The transformed output object is returned.
 
+### Simple example
+
 To map a property from in input to output:
 
 *Input*
@@ -75,6 +77,8 @@ var output = from('rss.channel.title').to('feed.title.#text').map(source);
     }
 }
 ```
+
+### Multiple properties
 
 You can map multiple properties:
 
@@ -112,6 +116,8 @@ var output =
 }
 ```
 
+### Missing properties
+
 Properties you include in the mapping rules which are not contained in the input will be ignored and not result in an exception. For example in this example the property `rss.category.title` do not exist in the input. The other properties are successfully mapped.
 
 *Input*
@@ -143,6 +149,8 @@ var output =
     }
 }
 ```
+
+### With keyword
 
 You can use the `with` keyword to specify mappings at which are scoped to the parent rule. In the next example `rss.channel` will be mapped to `feed`. How the mapping is done is specified using the rules inside the `with` method.
 
@@ -181,6 +189,8 @@ var output =
     }
 }
 ```
+
+### Nested with blocks
 
 You can next `with` scopes inside other `with` scopes:
 
@@ -230,6 +240,8 @@ var output =
     }
 }
 ```
+
+### Arrays using the each keyword
 
 In the previous example the property `trkpt` in the input contained an array. This value is copped to the output `Trackpoint`. These array values are not treated any differently than if they were strings.
 
@@ -282,7 +294,9 @@ var output =
 }
 ```
 
-You can include additional littoral values in the output using append the `include` keyword to a rule. 
+### Including literal values
+
+You can include additional literal values in the output using append the `include` keyword to a rule. 
 
 *Input*
 ```js
@@ -324,6 +338,8 @@ var output =
     }
 }
 ```
+
+### Using custom functions
 
 You can specify a function to modify the input value of a property before it is set int the output property by insert the `using` method between the `from` and `to` path of a rule.
 
