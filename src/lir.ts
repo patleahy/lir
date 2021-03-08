@@ -23,6 +23,9 @@ class LirRule {
             output = {};
 
         var innerObject = this.walk(input, this.fromPath, false);
+        if (innerObject === undefined)
+            return output;
+
         var inputValue = innerObject[this.fromPath[this.fromPath.length-1]];
         inputValue = this.transform(inputValue);
         var outputValue = this.mapChildren(inputValue);
@@ -60,7 +63,7 @@ class LirRule {
             if (create) {
                 input[key] = inner = {};
             } else {
-                throw(`'property not found: ${key}`);
+                return undefined;
             }
         }
 

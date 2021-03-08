@@ -72,6 +72,24 @@ describe('Lir', () => {
         expect(output.feed.subtitle.text).to.be.equal('The very interesting things I do.');
     });
 
+    it('missing property is ignored', () => {
+
+        var source = {
+            rss: {
+                channel: {
+                    title: 'My Blog'
+                }
+            }
+        };
+
+        var output = 
+             from('rss.channel.title').to('feed.title.text')
+            .from('rss.category.title').to('feed.category.text')
+            .map(source);
+
+        expect(output.feed.title.text).to.be.equal('My Blog');
+    });
+
     it('two properties at different depths', () => {
         var source = {
             rss: {
