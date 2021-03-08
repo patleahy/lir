@@ -1,3 +1,9 @@
+/**
+ * Tests of the Lir DSL.
+ * 
+ * Most of these tests are simar to the example documented in the README.md
+ */
+
 import { expect } from 'chai';
 import { from } from '../src/lir';
 

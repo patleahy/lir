@@ -1,3 +1,6 @@
+/**
+ * Lir rules which maps from a RSS format to Atom format.
+ */
 import { from } from './lir';
 
 var typeText = { '@_type' : 'text' };
