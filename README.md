@@ -52,9 +52,9 @@ To map a property from in input to output:
 *Input*
 ```js
 {
-    rss: {
-        channel: {
-            title: 'My Blog'
+    'rss': {
+        'channel': {
+            'title': 'My Blog'
         }
     }
 }
