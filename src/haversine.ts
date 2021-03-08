@@ -1,3 +1,11 @@
+/**
+ * Implementation of the haversine formula to calculate the distance between 
+ * two points on the globe. 
+ * 
+ * This is not part of the Lir DSL implementation but it is used in the gpx2tcx
+ * mapping rules to calculate a property in the TCX format which is not in the
+ * GPX format.
+ */
 export const haversine = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
     const radius = 6367000; // m
     const dlatrad = deg2rad(lat2 - lat1);
