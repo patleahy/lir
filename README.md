@@ -18,13 +18,13 @@ CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu
 
 Here are the important source files:
 
-| File            | Description                                                                |
-| --------------- | -------------------------------------------------------------------------- |
-| src/lir.ts      | The implementation of the Lir DSL.                                         |
-| test/lir.ts     | Tests of the DSL methods.                                                  |
-| src/gpx2tcx.ts  | A Lir rules which maps from a GPX format to TCX format.                    |
-| src/rss2atom.ts | A Lir rules which maps from a RSS format to Atom format.                   |
-| src/lir-cli.ts  | A command line script for using gpx2tcx and rss2atom to convrrt XML files. |
+| File                               | Description                                                                |
+| ---------------------------------- | -------------------------------------------------------------------------- |
+| [src/lir.ts](src/lir.ts)           | The implementation of the Lir DSL.                                         |
+| [test/lir.ts](test/lir.ts)         | Tests of the DSL methods.                                                  |
+| [src/gpx2tcx.ts](src/gpx2tcx.ts)   | A Lir rules which maps from a GPX format to TCX format.                    |
+| [src/rss2atom.ts](src/rss2atom.ts) | A Lir rules which maps from a RSS format to Atom format.                   |
+| [src/lir-cli.tcs](src/lir-cli.ts ) | A command line script for using gpx2tcx and rss2atom to convert XML files. |
 
 ## Command Line Usage
 
