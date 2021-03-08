@@ -22,8 +22,8 @@ Here are the important source files:
 | ---------------------------------- | -------------------------------------------------------------------------- |
 | [src/lir.ts](src/lir.ts)           | The implementation of the Lir DSL.                                         |
 | [test/lir.ts](test/lir.ts)         | Tests of the DSL methods.                                                  |
-| [src/gpx2tcx.ts](src/gpx2tcx.ts)   | A Lir rules which maps from a GPX format to TCX format.                    |
-| [src/rss2atom.ts](src/rss2atom.ts) | A Lir rules which maps from a RSS format to Atom format.                   |
+| [src/gpx2tcx.ts](src/gpx2tcx.ts)   | Lir rules which maps from a GPX format to TCX format.                      |
+| [src/rss2atom.ts](src/rss2atom.ts) | Lir rules which maps from a RSS format to Atom format.                     |
 | [src/lir-cli.tcs](src/lir-cli.ts ) | A command line script for using gpx2tcx and rss2atom to convert XML files. |
 
 ## Command Line Usage
@@ -45,11 +45,11 @@ npm run test
 
 ## Language Usage
 
-These examples will show the Lir code to convert from an example input structure to an output structure. The examples show increasing more complected rules. A simple rule specifics a `to` property and a `from` property. Rules are executed by calling `map` on the rule, passing in a source object. The transformed output object is returned.
+These examples will show the Lir code to convert from an example input structure to an output structure. A simple rule specifics a `to` property and a `from` property. Rules are executed by calling `map` on the rule, passing in a source object. The transformed output object is returned.
 
 ### Simple example
 
-To map a property from in input to output:
+To map a property from input to output:
 
 *Input*
 ```js
@@ -118,7 +118,7 @@ var output =
 
 ### Missing properties
 
-Properties you include in the mapping rules which are not contained in the input will be ignored and not result in an exception. For example in this example the property `rss.category.title` do not exist in the input. The other properties are successfully mapped.
+Properties you include in the mapping rules which are not contained in the input will be ignored and not result in an exception. For example, the property `rss.category.title` does not exist in the input. The other properties are successfully mapped.
 
 *Input*
 ```js
@@ -152,7 +152,7 @@ var output =
 
 ### With keyword
 
-You can use the `with` keyword to specify mappings at which are scoped to the parent rule. In the next example `rss.channel` will be mapped to `feed`. How the mapping is done is specified using the rules inside the `with` method.
+You can use the `with` keyword to specify mappings which are scoped to the parent rule. In the next example `rss.channel` will be mapped to `feed`. How the mapping is done is specified using the rules inside the `with` method.
 
 *Input*
 ```js
@@ -192,7 +192,7 @@ var output =
 
 ### Nested with blocks
 
-You can next `with` scopes inside other `with` scopes:
+You can nest `with` scopes inside other `with` scopes:
 
 
 *Input*
@@ -242,11 +242,11 @@ var output =
 }
 ```
 
-### Arrays using the each keyword
+### Arrays using the `each` keyword
 
-In the previous example the property `trkpt` in the input contained an array. This value is copped to the output `Trackpoint`. These array values are not treated any differently than if they were strings.
+In the previous example the property `trkpt` in the input contained an array. This value is copied to the output `Trackpoint`. These array values are not treated any differently than if they were strings.
 
-If you ean to map the values inside the array to a different output structure you must use the `each` keyword to specify rules which will be applied to each item in the input array.
+If you need to map the values inside the array to a different output structure you must use the `each` keyword to specify rules which will be applied to each item in the input array.
 
 *Input*
 ```js
@@ -298,7 +298,7 @@ var output =
 
 ### Including literal values
 
-You can include additional literal values in the output using append the `include` keyword to a rule. 
+You can include literal values in the output by appending the `include` keyword to a rule. 
 
 *Input*
 ```js
@@ -344,7 +344,7 @@ var output =
 
 ### Using custom functions
 
-You can specify a function to modify the input value of a property before it is set int the output property by insert the `using` method between the `from` and `to` path of a rule.
+You can specify a function to modify the input value of a property before it is set in the output property by inserting the `using` method between the `from` and `to` path of a rule.
 
 This example inserts a function to convert the format of a date time string.
 
