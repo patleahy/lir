@@ -58,7 +58,7 @@ To map a property from in input to output:
         }
     }
 }
-````
+```
 
 *Code*
 ```ts
@@ -68,10 +68,10 @@ var output = from('rss.channel.title').to('feed.title.#text').map(source);
 *Output*
 ```js
 {
-    feed: {
-      title: {
-        text: 'My Blog'
-      }
+    'feed': {
+        'title': {
+            'text': 'My Blog'
+        }
     }
 }
 ```
@@ -81,10 +81,10 @@ You can map multiple properties:
 *Input*
 ```js
 {
-    rss: {
-        channel: {
-            title: 'My Blog',
-            description: 'The very interesting things I do.'
+    'rss': {
+        'channel': {
+            'title': 'My Blog',
+            'description': 'The very interesting things I do.'
         }
     }
 }
@@ -101,12 +101,12 @@ var output =
 *Output*
 ```js
 {
-    feed: {
-      title: {
-        text: 'My Blog',
+    'feed': {
+      'title': {
+        'text': 'My Blog',
       },
-      subtitle: {
-        text: 'The very interesting things I do.'
+      'subtitle': {
+        'text': 'The very interesting things I do.'
       }
     }
 }
@@ -117,9 +117,9 @@ Properties you include in the mapping rules which are not contained in the input
 *Input*
 ```js
 {
-    rss: {
-        channel: {
-            title: 'My Blog'
+    'rss': {
+        'channel': {
+            'title': 'My Blog'
         }
     }
 }
@@ -136,9 +136,9 @@ var output =
 *Output*
 ```js
 {
-    feed: {
-        title: {
-            text: 'My Blog'
+    'feed': {
+        'title': {
+            'text': 'My Blog'
         }
     }
 }
@@ -149,11 +149,11 @@ You can use the `with` keyword to specify mappings at which are scoped to the pa
 *Input*
 ```js
 {
-    rss: {
-        channel: {
-            title: 'My Blog',
-            link: {
-                href: 'http://myspace.com/pat',
+    'rss': {
+        'channel': {
+            'title': 'My Blog',
+            'link': {
+                'href': 'http://myspace.com/pat',
             }
         }
     }
@@ -173,10 +173,10 @@ var output =
 *Output*
 ```js
 {
-    feed: {
-        title: {
-            text: 'My Blog',
-            href: 'http://myspace.com/pat'
+    'feed': {
+        'title': {
+            'text': 'My Blog',
+            'href': 'http://myspace.com/pat'
         }
     }
 }
