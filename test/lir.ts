@@ -132,7 +132,7 @@ describe('Lir', () => {
     });
 
 
-    it('child mapping using with and and', () => {
+    it('child mapping using two rules', () => {
         var source = {
             rss: {
                 channel: {
@@ -152,9 +152,10 @@ describe('Lir', () => {
             .map(source);
         
         expect(output.feed.title.text).to.be.equal('My Blog');
+        expect(output.feed.link.href).to.be.equal('http://myspace.com/pat');
     });
 
-    it('child mapping using two with/and blocks', () => {
+    it('child mapping using two with blocks', () => {
         var source = {
             gpx: {
                 trk: { 
@@ -308,7 +309,7 @@ describe('Lir', () => {
         var source = {
             rss: {
                 channel: {
-                    lastBuildDate: '12/25/2020',
+                    lastBuildDate: '11/25/2020',
                 }
             }
         };
@@ -318,7 +319,7 @@ describe('Lir', () => {
             .to('feed.updated')
             .map(source);
 
-        expect(output.feed.updated.substring(0, 11)).to.equal("2020-12-25T");
+        expect(output.feed.updated.substring(0, 11)).to.equal("2020-11-25T");
     });
 
     it("using to transform a field in an array", () => {
@@ -331,12 +332,14 @@ describe('Lir', () => {
             }
         };
 
+        const dateConvert = (dt) => (new Date(dt)).toISOString();
+
         var output = from('rss.items')
             .each()
             .to('feed.entry')
             .with(
                 from('lastBuildDate')
-                .using(dt => (new Date(dt)).toISOString())
+                .using(dateConvert)
                 .to('updated'))
             .map(source);
 
