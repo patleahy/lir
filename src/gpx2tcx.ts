@@ -14,12 +14,12 @@ export const rules =
         .from('time').to('Time')
         .from('ele').to('AltitudeMeters'));
 
-
+        
 // TCX point contain a running total of the distance since the start. 
 // GPX doesn't have this data but we can calculate it.
-// This takes advantage the using keyword to add an custom transformation 
+// This takes advantage of the 'using' keyword to add a custom transformation 
 // function to the mapping rules. We add the calcDistance function
-// to turn the input trackpoint into a object like this 
+// to turn the input trackpoint into an object like this 
 // "{ 'DistanceMeters' : 12.42 }". That object will then be merged into the 
 // Trackpoint object that was already created using the mappings above.
 

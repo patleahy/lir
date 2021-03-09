@@ -1,7 +1,7 @@
 /**
  * Tests of the Lir DSL.
- * 
- * Most of these tests are simar to the example documented in the README.md
+ *
+ * Most of these tests are similar to the example documented in the README.md
  */
 
 import { expect } from 'chai';
@@ -25,7 +25,7 @@ describe('Lir', () => {
                 }
             }
         };
-        
+
         var output = from('rss.channel.title').to('feed.title.#text').map(source);
 
         expect(output.feed.title['#text']).to.be.equal('My Blog');
@@ -34,7 +34,7 @@ describe('Lir', () => {
     it('array of properties mapping', () => {
         var source = {
             gpx: {
-                trk: { 
+                trk: {
                     trkseg: {
                         trkpt: [
                             { lat: 45.839295, lon: -123.959679 },
@@ -46,7 +46,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('gpx.trk.trkseg.trkpt')
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
             .map(source);
@@ -69,7 +69,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('rss.channel.title').to('feed.title.text')
             .from('rss.channel.description').to('feed.subtitle.text')
             .map(source);
@@ -88,7 +88,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('rss.channel.title').to('feed.title.text')
             .from('rss.category.title').to('feed.category.text')
             .map(source);
@@ -108,7 +108,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('rss.channel.title').to('feed.title.text')
             .from('rss.channel.link.href').to('feed.link.href')
             .map(source);
@@ -129,14 +129,13 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('rss.channel').to('feed')
             .with(from('title').to('title.text'))
             .map(source);
-        
+
         expect(output.feed.title.text).to.be.equal('My Blog');
     });
-
 
     it('child mapping using two rules', () => {
         var source = {
@@ -150,13 +149,13 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('rss.channel').to('feed')
             .with(
                  from('title').to('title.text')
                 .from('link.href').to('link.href'))
             .map(source);
-        
+
         expect(output.feed.title.text).to.be.equal('My Blog');
         expect(output.feed.link.href).to.be.equal('http://myspace.com/pat');
     });
@@ -164,7 +163,7 @@ describe('Lir', () => {
     it('child mapping using two with blocks', () => {
         var source = {
             gpx: {
-                trk: { 
+                trk: {
                     trkseg: {
                         trkpt: [
                             { lat: 45.839295, lon: -123.959679 },
@@ -176,7 +175,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('gpx').to('TrainingCenterDatabase')
             .with(
                  from('trk').to('Courses')
@@ -195,7 +194,7 @@ describe('Lir', () => {
 
         var source = {
             gpx: {
-                trk: { 
+                trk: {
                     trkseg: {
                         trkpt: [
                             { lat: 45.839295, lon: -123.959679 },
@@ -207,7 +206,7 @@ describe('Lir', () => {
             }
         };
 
-        var lir = 
+        var lir =
              from('gpx.trk.trkseg.trkpt')
             .each()
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
@@ -226,7 +225,7 @@ describe('Lir', () => {
 
         var source = {
             gpx: {
-                trk: { 
+                trk: {
                     trkseg: {
                         trkpt: [
                             { lat: 45.839295, lon: -123.959679 },
@@ -238,7 +237,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('gpx.trk.trkseg.trkpt').each()
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
             .with(from('lat').to('Latitude'))
@@ -253,7 +252,7 @@ describe('Lir', () => {
 
         var source = {
             gpx: {
-                trk: { 
+                trk: {
                     trkseg: {
                         trkpt: [
                             { lat: 45.839295, lon: -123.959679 },
@@ -265,7 +264,7 @@ describe('Lir', () => {
             }
         };
 
-        var output = 
+        var output =
              from('gpx.trk.trkseg.trkpt').each()
             .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint')
             .with(
@@ -282,7 +281,7 @@ describe('Lir', () => {
     });
 
     it('add constant value to mapping', () => {
-        
+
         var source = {
             rss: {
                 channel: {
@@ -310,7 +309,7 @@ describe('Lir', () => {
         expect(output.feed.link.type).to.be.equal('text/html');
     });
 
-    it("using to transform a field", () => {
+    it('using to transform a field', () => {
 
         var source = {
             rss: {
@@ -325,10 +324,10 @@ describe('Lir', () => {
             .to('feed.updated')
             .map(source);
 
-        expect(output.feed.updated.substring(0, 11)).to.equal("2020-11-25T");
+        expect(output.feed.updated.substring(0, 11)).to.equal('2020-11-25T');
     });
 
-    it("using to transform a field in an array", () => {
+    it('using to transform a field in an array', () => {
         var source = {
             rss: {
                 items: [
@@ -349,12 +348,11 @@ describe('Lir', () => {
                 .to('updated'))
             .map(source);
 
-        expect(output.feed.entry[0].updated.substring(0, 11)).to.equal("2020-12-25T");
-        expect(output.feed.entry[1].updated.substring(0, 11)).to.equal("2020-06-04T");
+        expect(output.feed.entry[0].updated.substring(0, 11)).to.equal('2020-12-25T');
+        expect(output.feed.entry[1].updated.substring(0, 11)).to.equal('2020-06-04T');
     });
 
-
-    it("using to transform in an array element into property", () => {
+    it('using to transform in an array element into property', () => {
 
         var source = {
             gpx: {
@@ -371,27 +369,27 @@ describe('Lir', () => {
 
         function calcDistance(point: any) {
             return { DistanceMeters: point.lat * 10 };
-        } 
+        }
 
         var rules = from('gpx.trk.trkseg.trkpt')
             .each()
             .to('Track.Trackpoint')
             .with(
-                 from("lat").to("Latitude")
-                .from("lon").to("Longitude"));
+                 from('lat').to('Latitude')
+                .from('lon').to('Longitude'));
 
         rules.from('gpx.trk.trkseg.trkpt')
             .each()
             .using(calcDistance)
             .to('Track.Trackpoint');
-        
+
         var output = rules.map(source);
 
         expect(output.Track.Trackpoint[0].Latitude).to.be.equal(45.839295);
         expect(output.Track.Trackpoint[0].Longitude).to.be.equal(-123.959679);
         expect(output.Track.Trackpoint[1].Latitude).to.be.equal(45.8385559);
         expect(output.Track.Trackpoint[1].Longitude).to.be.equal(-123.959732);
-        
+
         expect(output.Track.Trackpoint[0].DistanceMeters).to.be.approximately(458.3929, 0.0001);
         expect(output.Track.Trackpoint[1].DistanceMeters).to.be.approximately(458.3855, 0.0001);
     });

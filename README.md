@@ -193,7 +193,6 @@ var output =
 
 You can nest `with` scopes inside other `with` scopes:
 
-
 *Input*
 ```js
 {
