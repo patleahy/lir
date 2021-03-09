@@ -5,12 +5,16 @@
 /**
  * There are two ways you can use the DSL. You can create a root rule and then
  * chain rules onto it, e.g.:
+ * 
+ *      import { Lir } from './lir';
  *
  *      Lir().from('from.prop').to('to.prop').map(source);
  *
  * Alternatively you can import the 'from' function and use it to create a root
  * rule:
  *
+ *      import { from } from './lir';
+ * 
  *      from('from.prop').to('to.prop').map(source);
  */
 export const Lir = () => new LirRootRule();
