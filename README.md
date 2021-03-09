@@ -6,13 +6,12 @@ CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu
 
 ## Documents
 
-* [HW5.3 Specification](https://docs.google.com/document/d/1tCTTs3S26qWGabqUhrtquPn9vYZ-NTc3pHqQ6oVPg6U/edit)
-  
-* [HW5.2 Pre-Proposal and Proposal](https://docs.google.com/document/d/1CjqzdFDgl1bzQAXJ8aX-fIM69zMkuVQhIi-Fin2XjL4/)
-  
-* [HW5.2 Design Document](DESIGN.md)
-
-* [HW5.2 Report](https://docs.google.com/document/d/17IKeacxus3FExMbtTj0ISDHS651wpB2yPR0XiplhABQ/edit)
+| Name                                                                                                                | Url                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [HW5.3 Specification](https://docs.google.com/document/d/1tCTTs3S26qWGabqUhrtquPn9vYZ-NTc3pHqQ6oVPg6U)              | https://docs.google.com/document/d/1tCTTs3S26qWGabqUhrtquPn9vYZ-NTc3pHqQ6oVPg6U           |
+| [HW5.2 Pre-Proposal and Proposal](https://docs.google.com/document/d/1CjqzdFDgl1bzQAXJ8aX-fIM69zMkuVQhIi-Fin2XjL4/) | https://docs.google.com/document/d/1CjqzdFDgl1bzQAXJ8aX-fIM69zMkuVQhIi-Fin2XjL4/          |
+| [HW5.2 Design Document](DESIGN.md)                                                                                  | https://bitbucket.org/patleahy/lir/src/0535c88ef6de10041a1559eb0c1678ad65da3020/DESIGN.md |
+| [HW5.2 Report](https://docs.google.com/document/d/17IKeacxus3FExMbtTj0ISDHS651wpB2yPR0XiplhABQ)                     | https://docs.google.com/document/d/17IKeacxus3FExMbtTj0ISDHS651wpB2yPR0XiplhABQ           |
 
 ## Source Code
 
