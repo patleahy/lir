@@ -314,16 +314,8 @@ You can include literal values in the output by appending the `include` keyword 
 *Code*
 ```ts
 var output =
-     from('rss.channel.link')
-    .to('feed.link')
-    .with(
-         from('href').to('href')
-        .include(
-            {
-                'rel' : 'alternate',
-                'type' : 'text/html'
-            })
-        )
+     from('rss.channel.link.href').to('feed.link.href')
+    .include({ 'rel' : 'alternate', 'type' : 'text/html' }).to('feed.link')
     .map(source);
 ```
 

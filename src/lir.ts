@@ -132,8 +132,8 @@ class LirRule {
     }
 
     /**
-     * Add a special rule to the children rules which will add insert properties
-     * from an object literal to the output object when mapping.
+     * Add a special rule to the will insert properties from an object literal 
+     * to the output object when mapping.
      */
     public include(value: any): LirIncludeFrom {
         return new LirIncludeFrom(this, value);
