@@ -21,7 +21,8 @@ function main(argv: string[]) {
     
     const parserOptions = { 
         attributeNamePrefix: '@_',
-        ignoreAttributes : false 
+        ignoreAttributes : false,
+        cdataTagName: '_cdata_'
     };
     
     const xmlIn = fs.readFileSync(inputPath, 'utf8');
