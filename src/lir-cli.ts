@@ -11,15 +11,13 @@
  */
 import parser = require('fast-xml-parser');
 import fs = require('fs');
-import rss2atom = require('./rss2atom');
-import gpx2tcx = require('./gpx2tcx');
 
 function main(argv: string[]) {
     const outputPath = argv.pop();
     const inputPath = argv.pop();
-    const fileType = argv.pop();
+    const ruleType = argv.pop();
 
-    var rules = fileType === 'gpx' ? gpx2tcx.rules : rss2atom.rules;
+    var rules = require('./' + ruleType).rules;
     
     const parserOptions = { 
         attributeNamePrefix: '@_',
@@ -32,7 +30,7 @@ function main(argv: string[]) {
     const xmlOut = (new parser.j2xParser(parserOptions)).parse(objOut);
     fs.writeFileSync(outputPath, xmlOut, 'utf8');
 
-    console.log(`${fileType}: ${inputPath} -> ${outputPath}`);
+    console.log(`${ruleType}: ${inputPath} -> ${outputPath}`);
 }
 
 main(process.argv);
