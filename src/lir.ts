@@ -134,10 +134,12 @@ class LirRule {
     /**
      * Add a special rule to the children rules which will add insert properties
      * from an object literal to the output object when mapping.
+     * 
+     * See with() for why this rule is added to the last child.
      */
     public include(value: any): LirRule {
         var rule = new LirIncludeRule(value);
-        this.children.push(rule);
+        this.children[this.children.length-1].add(rule);
         return this;
     }
 

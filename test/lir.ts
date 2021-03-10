@@ -295,13 +295,11 @@ describe('Lir', () => {
         var output =
             from('rss.channel.link')
             .to('feed.link')
-            .with(
-                  from('href').to('href')
-                 .include({
-                    'rel' : 'alternate',
-                    'type' : 'text/html'
-                 })
-                )
+            .with(from('href').to('href'))
+            .include({
+                'rel' : 'alternate',
+                'type' : 'text/html'
+            })
             .map(source);
 
         expect(output.feed.link.href).to.be.equal('https://myblog.org/feed/');
