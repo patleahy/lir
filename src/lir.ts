@@ -134,13 +134,9 @@ class LirRule {
     /**
      * Add a special rule to the children rules which will add insert properties
      * from an object literal to the output object when mapping.
-     * 
-     * See with() for why this rule is added to the last child.
      */
-    public include(value: any): LirRule {
-        var rule = new LirIncludeRule(value);
-        this.children[this.children.length-1].add(rule);
-        return this;
+    public include(value: any): LirIncludeFrom {
+        return new LirIncludeFrom(this, value);
     }
 
     /**
@@ -343,14 +339,33 @@ class LirEachRule extends LirRule {
 }
 
 /**
+ * A special case of LirFrom so that we can remember the object literal
+ * to specified in the include() method.
+ */
+class LirIncludeFrom extends LirFrom {
+    private value: any;
+
+    constructor(parent: LirRule, value: any) {
+        super(parent, null);
+        this.value = value;
+    }
+
+    public to(path: string) : LirRule {
+        var rule = new LirIncludeRule(this.value, path);
+        this.parent.add(rule);
+        return this.parent;
+    }
+}
+
+/**
  * Implementation of the include() method. This merges the output object with
  * an object literal.
  */
 class LirIncludeRule extends LirRule {
     private value: any;
 
-    constructor(value: any) {
-        super(null, null);
+    constructor(value: any, toPath: string) {
+        super(null, toPath);
         this.value = value;
     }
 
@@ -358,7 +373,7 @@ class LirIncludeRule extends LirRule {
         if (output === undefined)
             output = {};
 
-        return { ...output, ...this.value };
+        return this.apply(output, this.value, this.toPath, false);
     }
 }
 

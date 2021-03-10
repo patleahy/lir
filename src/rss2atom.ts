@@ -3,28 +3,28 @@
  */
 import { from } from './lir';
 
-var typeText = { '@_type' : 'text' };
-var typeHtml = { '@_type' : 'html' };
+const typeText = { '@_type' : 'text' };
+const typeHtml = { '@_type' : 'html' };
+const altHtml  = { '@_type' : 'text/html', '@_rel' : 'alternate' };
 
 export const rules = from('rss.channel').to('feed')
     .with(
-         from('title').to('title.#text').include(typeText)
-        .from('description').to('subtitle.#text').include(typeText)
-        .from('link').to('link')
-        .with(
-             from('@_href').to('@_href')
-            .include({ 
-                'rel' : 'alternate',
-                'type' : 'text/html'
-             })
-        )
+         from('title').to('title.#text')
+        .include(typeText).to('title')
+        .from('description').to('subtitle.#text')
+        .include(typeText).to('subtitle')
+        .from('link.@_href').to('link.@_href')
+        .include(altHtml).to('link')
     );
 
 rules
     .from('rss.channel.item').each().to('feed.entry')
     .with(
-         from('title').to('title.#text').include(typeHtml)
-        .from('dc:creator').to('author.name')
-        .from('description').to('summary.#text').include(typeHtml)
-        .from('content:encoded').to('content.#text')
+         from('title').to('title._cdata_')
+        .include(typeHtml).to('title')
+        .from('dc:creator._cdata_').to('author.name')
+        .from('description._cdata_').to('summary._cdata_')
+        .include(typeHtml).to('summary')
+        .from('content:encoded._cdata_').to('content._cdata_')
+        .include(typeHtml).to('content')
     );
