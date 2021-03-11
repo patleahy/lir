@@ -12,7 +12,7 @@ CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu
 | [Pre-Proposal and Proposal](https://docs.google.com/document/d/1CjqzdFDgl1bzQAXJ8aX-fIM69zMkuVQhIi-Fin2XjL4/) | https://docs.google.com/document/d/1CjqzdFDgl1bzQAXJ8aX-fIM69zMkuVQhIi-Fin2XjL4/          |
 | [Design Document](DESIGN.md)                                                                                  | https://bitbucket.org/patleahy/lir/src/0535c88ef6de10041a1559eb0c1678ad65da3020/DESIGN.md |
 | [Report](https://docs.google.com/document/d/17IKeacxus3FExMbtTj0ISDHS651wpB2yPR0XiplhABQ)                     | https://docs.google.com/document/d/17IKeacxus3FExMbtTj0ISDHS651wpB2yPR0XiplhABQ           |
-| [Demo](https://youtu.be/38nbwsQmmCA)                                                                          | https://youtu.be/38nbwsQmmCA                                                              |
+| [Demo](https://drive.google.com/file/d/1iU4GjAj_hQKxIkraT8p7-BN71SNy1DL8/view?usp=sharing)                    | https://drive.google.com/file/d/1iU4GjAj_hQKxIkraT8p7-BN71SNy1DL8/view?usp=sharing        |
 
 ## Source Code
 
