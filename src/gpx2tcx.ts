@@ -12,9 +12,12 @@ export const rules =
          from('@_lat').to('Position.LatitudeDegrees')
         .from('@_lon').to('Position.LongitudeDegrees')
         .from('time').to('Time')
-        .from('ele').to('AltitudeMeters'));
+        .from('ele').to('AltitudeMeters')
+    )
+    .from('gpx.trk.trkseg.trkpt').each().using(calcDistance)
+    .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
 
-        
+
 // TCX point contain a running total of the distance since the start. 
 // GPX doesn't have this data but we can calculate it.
 // This takes advantage of the 'using' keyword to add a custom transformation 
@@ -22,9 +25,6 @@ export const rules =
 // to turn the input trackpoint into an object like this 
 // "{ 'DistanceMeters' : 12.42 }". That object will then be merged into the 
 // Trackpoint object that was already created using the mappings above.
-
-rules.from('gpx.trk.trkseg.trkpt').each().using(calcDistance)
-    .to('TrainingCenterDatabase.Courses.Course.Track.Trackpoint');
 
 var distance = 0.0;
 var prevPoint = undefined;
