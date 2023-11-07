@@ -1,8 +1,8 @@
 # Lir
 
-*A language for describing the conversion of data in one schema into another.*
+*A DSL for describing the conversion of data in one schema into another.*
 
-CSE P 590 wi21 Final Project - Pat Leahy - patleahy@uw.edu 
+Pat Leahy - pat@patleahy.com
 
 ## Documents
 
